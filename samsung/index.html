@@ -1,0 +1,3565 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="fr">
+    <link rel="stylesheet" href="./sfr_files/1622f6f9-2557-4c77-ae31-88e752ce2f42.css" /><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>SFR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta property="og:title" content="SFR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://mdn.sfr.fr/17b2EosT" />
+        <meta property="og:description" content="Découvrez si vous êtes le gagnant 📱" />
+        <meta property="og:image" content="http://rsms.co/logics/commons/og_preview/17b2EosT?image_url=http%3A%2F%2Fstatic.myelefant.com%2Ffiles%2Flogics_builder_field_filesupload_image_file%2Ffile%2Fcf9c9fc5-ecf4-4648-8b69-af099360279d.jpg" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <style>
+            .btn-widget {
+                display: inline-block;
+                padding: 0.5em 1em;
+                text-align: center;
+                text-decoration: none;
+                background-color: #ccc;
+                color: #666;
+                border: 0 solid #666;
+            }
+            .btn-widget:hover,
+            .btn-widget:active {
+                opacity: 0.8;
+            }
+            .btn-widget.btn-widget-small,
+            .btn-widget.btn-small {
+                font-size: 0.9em;
+            }
+            .btn-widget.btn-widget-medium,
+            .btn-widget.btn-medium {
+                font-size: 1.1em;
+            }
+            .btn-widget.btn-widget-big,
+            .btn-widget.btn-big {
+                font-size: 1.3em;
+            }
+            .btn-widget-small-width {
+                width: 70%;
+            }
+            .btn-widget-medium-width {
+                width: 80%;
+            }
+            .btn-widget-big-width {
+                width: 90%;
+            }
+            .btn-widget-full-width,
+            .btn-widget-activate-geoloc,
+            .btn-full-width {
+                width: 100% !important;
+                margin-left: 0 !important;
+            }
+            .btn-widget + .btn-widget {
+                margin-left: 6px;
+            }
+            .view {
+                background-color: #fff;
+                width: 100%;
+                min-height: 100%;
+                overflow: hidden;
+                z-index: 2;
+                position: fixed;
+                top: 0;
+                left: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                -moz-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+                -o-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            @media only screen and (min-width: 500px) and (min-device-width: 768px) {
+                .view {
+                    width: 500px;
+                    left: 50%;
+                    margin-left: -250px;
+                }
+            }
+            .view_header {
+                position: relative;
+                overflow: hidden;
+                height: 46px;
+                line-height: 46px;
+                z-index: 1;
+                color: rgba(0, 0, 0, 0.67);
+            }
+            .view_header_back {
+                position: absolute;
+                display: block;
+                line-height: 0;
+                left: 0;
+                top: 0;
+                padding: 12px 15px;
+                color: currentColor;
+            }
+            .view_header_back_icon {
+                fill: currentColor;
+                width: 22px;
+                height: 22px;
+            }
+            .view_header_title {
+                margin: 0;
+                font-size: 20px;
+            }
+            .view_body {
+                position: relative;
+            }
+            .view-slide-in-left {
+                -webkit-animation: slide-in-left 300ms;
+                -moz-animation: slide-in-left 300ms;
+                animation: slide-in-left 300ms;
+            }
+            .view-slide-in-right {
+                -webkit-animation: slide-in-right 200ms;
+                -moz-animation: slide-in-right 200ms;
+                animation: slide-in-right 200ms;
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+            .view-slide-out-right {
+                -webkit-animation: slide-out-right 200ms;
+                -moz-animation: slide-out-right 200ms;
+                animation: slide-out-right 200ms;
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+            .view-slide-in-bottom {
+                -webkit-animation: slide-in-bottom 300ms;
+                -moz-animation: slide-in-bottom 300ms;
+                animation: slide-in-bottom 300ms;
+            }
+            .view-slide-in-top {
+                -webkit-animation: slide-in-top 300ms;
+                -moz-animation: slide-in-top 300ms;
+                animation: slide-in-top 300ms;
+            }
+            @-webkit-keyframes slide-in-left {
+                from {
+                    transform: translateX(-100%);
+                }
+                to {
+                    transform: translateX(0);
+                }
+            }
+            @-webkit-keyframes slide-in-right {
+                from {
+                    -webkit-transform: translateX(100%);
+                }
+                to {
+                    -webkit-transform: translateX(0);
+                }
+            }
+            @-moz-keyframes slide-in-right {
+                from {
+                    -moz-transform: translateX(100%);
+                }
+                to {
+                    -moz-transform: translateX(0);
+                }
+            }
+            @keyframes slide-in-right {
+                from {
+                    -webkit-transform: translateX(100%);
+                    -moz-transform: translateX(100%);
+                    -ms-transform: translateX(100%);
+                    -o-transform: translateX(100%);
+                    transform: translateX(100%);
+                }
+                to {
+                    -webkit-transform: translateX(0);
+                    -moz-transform: translateX(0);
+                    -ms-transform: translateX(0);
+                    -o-transform: translateX(0);
+                    transform: translateX(0);
+                }
+            }
+            @-webkit-keyframes slide-out-right {
+                from {
+                    -webkit-transform: translateX(0);
+                }
+                to {
+                    -webkit-transform: translateX(100%);
+                }
+            }
+            @-moz-keyframes slide-out-right {
+                from {
+                    -moz-transform: translateX(0);
+                }
+                to {
+                    -moz-transform: translateX(100%);
+                }
+            }
+            @keyframes slide-out-right {
+                from {
+                    -webkit-transform: translateX(0);
+                    -moz-transform: translateX(0);
+                    -ms-transform: translateX(0);
+                    -o-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                to {
+                    -webkit-transform: translateX(100%);
+                    -moz-transform: translateX(100%);
+                    -ms-transform: translateX(100%);
+                    -o-transform: translateX(100%);
+                    transform: translateX(100%);
+                }
+            }
+            @-webkit-keyframes slide-in-bottom {
+                from {
+                    transform: translateY(100%);
+                }
+                to {
+                    transform: translateY(0);
+                }
+            }
+            @-webkit-keyframes slide-in-top {
+                from {
+                    transform: translateY(-100%);
+                }
+                to {
+                    transform: translateY(0);
+                }
+            }
+            .input-widget-basic,
+            .textarea-widget-basic {
+                padding: 0 10px;
+                background-color: #e5e5e5;
+                border: 1px solid #999;
+                color: #222;
+                -webkit-appearance: none;
+                border-radius: 0;
+                display: inline-block;
+                height: 37px;
+                font-size: 0.95em;
+                width: 100%;
+            }
+            .input-widget-basic:focus,
+            .textarea-widget-basic:focus,
+            .input-widget-basic:active,
+            .textarea-widget-basic:active {
+                outline: none;
+            }
+            .input-widget-compact {
+                width: 86% !important;
+                height: 37px !important;
+                vertical-align: top;
+                border-right: none !important;
+                border-top-right-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+            .textarea-widget-basic {
+                height: 110px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                display: block;
+            }
+            .btn-widget-submit {
+                width: 100%;
+                min-height: 37px;
+                margin-top: 7px;
+                font-size: 1em;
+            }
+            .btn-widget-submit:active {
+                position: relative;
+            }
+            .btn-widget-submit:active:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+            .btn-widget-submit:focus,
+            .btn-widget-submit:active {
+                outline: none;
+            }
+            .btn-widget-submit_text {
+                position: relative;
+                z-index: 1;
+            }
+            .btn-widget-submit-compact {
+                padding: 0 !important;
+                margin: 0 !important;
+                width: 14%;
+                height: 37px !important;
+                vertical-align: top;
+                border: none;
+                background-color: #999;
+                color: #fff;
+                border-top-left-radius: 0 !important;
+                border-bottom-left-radius: 0 !important;
+            }
+            .btn-widget-submit-compact_icon {
+                width: 20px;
+                height: 37px;
+                fill: currentColor;
+                position: relative;
+                z-index: 1;
+            }
+            .widget-btn {
+                padding: 14px 20px;
+            }
+            .widget-btn-gallery {
+                padding: 14px 20px;
+            }
+            .widget-btn-store {
+                padding: 14px 20px;
+            }
+            .widget-btn-download-app {
+                padding: 14px 20px;
+            }
+            .widget-btn-download-app_title {
+                margin-top: 0;
+                margin-bottom: 0.8em;
+                font-size: 18px;
+            }
+            .btn-widget-download-app {
+                position: relative;
+                line-height: 1.3;
+                font-size: 1em;
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn-widget-download-app.btn-small,
+            .btn-widget-download-app.btn-widget-small {
+                font-size: 0.95em;
+            }
+            .btn-widget-download-app.btn-medium,
+            .btn-widget-download-app.btn-widget-medium {
+                font-size: 1.05em;
+            }
+            .btn-widget-download-app.btn-big,
+            .btn-widget-download-app.btn-big-widget {
+                font-size: 1.15em;
+            }
+            .btn-widget-download-app_icon {
+                width: 40px;
+                height: 40px;
+                min-height: 40px;
+                min-width: 40px;
+                margin-right: 0.2em;
+                fill: currentColor;
+            }
+            .btn-small .btn-widget-download-app_icon,
+            .btn-widget-small .btn-widget-download-app_icon {
+                width: 32px;
+                height: 32px;
+                min-height: 32px;
+                min-width: 32px;
+                margin-left: -6px;
+            }
+            .btn-medium .btn-widget-download-app_icon,
+            .btn-widget-medium .btn-widget-download-app_icon {
+                width: 40px;
+                height: 40px;
+                min-height: 40px;
+                min-width: 40px;
+                margin-left: -8px;
+            }
+            .btn-big .btn-widget-download-app_icon,
+            .btn-widget-big .btn-widget-download-app_icon {
+                width: 45px;
+                height: 45px;
+                min-height: 45px;
+                min-width: 45px;
+                margin-left: -10px;
+            }
+            .widget-click-to-call {
+                padding: 14px 20px;
+            }
+            .widget-add-to-calendar {
+                padding: 14px 20px;
+            }
+            .widget-spacer {
+                height: 30px;
+            }
+            .widget-title {
+                padding: 14px 20px;
+            }
+            .widget-title h1 {
+                margin: 0;
+                font-size: 20px;
+            }
+            .widget-title .title-small {
+                font-size: 18px;
+            }
+            .widget-title .title-medium {
+                font-size: 20px;
+            }
+            .widget-title .title-big {
+                font-size: 22px;
+            }
+            .widget-text {
+                padding: 14px 20px;
+                margin: 0;
+                text-align: center;
+            }
+            .widget-text p:last-child {
+                margin-bottom: 0;
+            }
+            .widget-text p:first-child {
+                margin-top: 0;
+            }
+            .widget-text ul,
+            .widget-text ol {
+                padding-left: 20px;
+            }
+            .widget-text_rich-text {
+                overflow: hidden;
+            }
+            .widget-separator {
+                overflow: hidden;
+                height: 31px;
+                padding: 1px 0;
+            }
+            .widget-separator hr {
+                width: 100%;
+                margin: 15px auto;
+                height: 1px;
+                color: #ccc;
+                background-color: #ccc;
+                border: 0 none;
+            }
+            .widget-barcode {
+                padding: 20px 20px;
+                margin: 0;
+            }
+            .widget-barcode_title {
+                font-size: 16px;
+                font-weight: normal;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            .widget-barcode_img {
+                padding: 10px 8px 4px;
+                background-color: #fff;
+                line-height: 0;
+                text-align: center;
+            }
+            .widget-barcode_img img {
+                max-width: 100%;
+                height: auto;
+                height: 100px;
+            }
+            .widget-qrcode {
+                padding: 20px 20px;
+                margin: 0;
+            }
+            .widget-qrcode_title {
+                font-size: 16px;
+                font-weight: normal;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            .widget-qrcode_img {
+                line-height: 0;
+                text-align: center;
+                color: #222;
+                width: 90%;
+                margin: 0 auto;
+            }
+            .widget-qrcode_img svg {
+                width: 100%;
+                height: 100%;
+            }
+            .widget-qrcode_img svg path {
+                fill: currentColor !important;
+            }
+            .widget-slider {
+                overflow: hidden !important;
+            }
+            .widget-slider img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .widget-slider .swiper-container {
+                width: 100%;
+                background-color: #222;
+            }
+            .widget-slider .swiper-slide {
+                text-align: center;
+                position: relative;
+            }
+            .widget-slider .swiper-slide:after {
+                content: '';
+                display: block;
+                padding-top: 75%;
+            }
+            .widget-slider .swiper-pagination-bullet {
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+            .swiper-button_icon {
+                width: 26px;
+                height: 26px;
+                fill: #fff;
+            }
+            .swiper-button-prev,
+            .swiper-button-next {
+                position: absolute;
+                top: 50%;
+                width: 26px;
+                height: 26px;
+                margin-top: -13px;
+                z-index: 1;
+                -moz-background-size: 27px 44px;
+                -webkit-background-size: 27px 44px;
+                background-size: 27px 44px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .swiper-button-prev.swiper-button-white,
+            .swiper-container-rtl .swiper-button-next.swiper-button-white {
+                background-image: none;
+            }
+            .swiper-button-next,
+            .swiper-container-rtl .swiper-button-prev {
+                background-image: none;
+                right: 10px;
+                left: auto;
+            }
+            .swiper-button-prev,
+            .swiper-container-rtl .swiper-button-next {
+                background-image: none;
+                left: 10px;
+                right: auto;
+            }
+            .swiper-button-next.swiper-button-white,
+            .swiper-container-rtl .swiper-button-prev.swiper-button-white {
+                background-image: none;
+            }
+            .swiper-pagination {
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                z-index: 1;
+            }
+            .swiper-pagination-bullet {
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                border-radius: 100%;
+                background: #000;
+                opacity: 0.2;
+                margin: 0 5px;
+            }
+            .swiper-pagination-bullet {
+                background: #fff;
+            }
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+            .swiper-pagination {
+                left: 0;
+                bottom: 10px;
+            }
+            .widget-image img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            .image-wrapper {
+                overflow: hidden;
+            }
+            .widget-logo {
+                padding: 14px 20px;
+                line-height: 0;
+            }
+            .widget-logo img {
+                height: auto;
+                max-width: 60%;
+                max-height: 70px;
+            }
+            .widget-logo .logo-small {
+                max-width: 60%;
+                max-height: 70px;
+            }
+            .widget-logo .logo-medium {
+                max-width: 70%;
+                max-height: 80px;
+            }
+            .widget-logo .logo-big {
+                max-width: 80%;
+                max-height: 90px;
+            }
+            .widget-btn-places-map {
+                padding: 14px 20px;
+            }
+            .btn-places-map {
+                min-width: 48%;
+                position: relative;
+            }
+            .btn-places-map.btn-medium .btn-places-map_icon,
+            .btn-places-map.btn-widget-medium .btn-places-map_icon {
+                width: 19px;
+                height: 19px;
+            }
+            .btn-places-map.btn-big .btn-places-map_icon,
+            .btn-places-map.btn-widget-big .btn-places-map_icon {
+                width: 22px;
+                height: 22px;
+            }
+            .btn-places-map_icon {
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                display: inline-block;
+                position: relative;
+                bottom: -2px;
+                fill: currentColor;
+            }
+            .widget-nearest-place-map {
+                padding: 14px 20px;
+            }
+            .widget-nearest-place-map .place-block {
+                display: none;
+            }
+            .widget-nearest-place-map .place-block.geoloc-progress {
+                display: block;
+            }
+            .widget-nearest-place-map .btn-widget,
+            .widget-nearest-place-map .btn-widget.btn-small,
+            .widget-nearest-place-map .btn-widget.btn-widget-small {
+                font-size: 0.8em;
+            }
+            .widget-nearest-place-map .btn-widget.btn-medium,
+            .widget-nearest-place-map .btn-widget.btn-widget-medium {
+                font-size: 0.9em;
+            }
+            .widget-nearest-place-map .btn-widget.btn-big,
+            .widget-nearest-place-map .btn-widget.btn-widget-big {
+                padding-bottom: 0.65em;
+                font-size: 0.95em;
+            }
+            .widget-nearest-place-map .undefined {
+                display: none;
+            }
+            .nearest-place_title {
+                margin-top: 0;
+                font-size: 1.05em;
+            }
+            .nearest-place_name {
+                font-weight: bold;
+                font-size: 0.9em;
+                margin: 0.5em 0;
+            }
+            .nearest-place_address {
+                font-size: 0.9em;
+                margin: 0.5em 0;
+            }
+            .nearest-place_opening-time {
+                font-size: 0.9em;
+            }
+            .btn-website-place {
+                margin-bottom: 6px;
+            }
+            .nearest-place_actions {
+                text-align: center;
+            }
+            .btn-phone-place,
+            .btn-go-place {
+                border-width: 0px;
+                min-width: 48%;
+                margin-bottom: 8px;
+                position: relative;
+            }
+            .btn-phone-place.btn-widget,
+            .btn-widget.btn-go-place {
+                width: auto;
+            }
+            .btn-phone-place.btn-medium .btn-phone-place_icon,
+            .btn-medium.btn-go-place .btn-phone-place_icon,
+            .btn-phone-place.btn-medium .btn-go-place_icon,
+            .btn-medium.btn-go-place .btn-go-place_icon,
+            .btn-phone-place.btn-widget-medium .btn-phone-place_icon,
+            .btn-widget-medium.btn-go-place .btn-phone-place_icon,
+            .btn-phone-place.btn-widget-medium .btn-go-place_icon,
+            .btn-widget-medium.btn-go-place .btn-go-place_icon {
+                margin-right: 7px;
+                top: -2px;
+                width: 15px;
+                height: 15px;
+            }
+            .btn-phone-place.btn-big .btn-phone-place_icon,
+            .btn-big.btn-go-place .btn-phone-place_icon,
+            .btn-phone-place.btn-big .btn-go-place_icon,
+            .btn-big.btn-go-place .btn-go-place_icon,
+            .btn-phone-place.btn-widget-big .btn-phone-place_icon,
+            .btn-widget-big.btn-go-place .btn-phone-place_icon,
+            .btn-phone-place.btn-widget-big .btn-go-place_icon,
+            .btn-widget-big.btn-go-place .btn-go-place_icon {
+                margin-right: 8px;
+                top: -1px;
+                width: 16px;
+                height: 16px;
+            }
+            .btn-phone-place_icon,
+            .btn-go-place_icon {
+                width: 14px;
+                height: 14px;
+                margin-right: 6px;
+                position: relative;
+                top: -1px;
+                display: inline-block;
+                fill: currentColor;
+                vertical-align: middle;
+            }
+            .btn-go-place {
+                margin-bottom: 0;
+            }
+            .view-map .navigation-btn {
+                float: right;
+                line-height: normal;
+            }
+            .widget-logo {
+                padding: 14px 20px;
+                line-height: 0;
+            }
+            .widget-logo img {
+                height: auto;
+                max-width: 60%;
+                max-height: 70px;
+            }
+            .widget-logo .logo-small {
+                max-width: 60%;
+                max-height: 70px;
+            }
+            .widget-logo .logo-medium {
+                max-width: 70%;
+                max-height: 80px;
+            }
+            .widget-logo .logo-big {
+                max-width: 80%;
+                max-height: 90px;
+            }
+            .widget-conditions {
+                padding: 14px 20px;
+            }
+            .widget-conditions_text {
+                font-size: 13px;
+            }
+            .btn-show-conditions {
+                font-size: 0.85em;
+            }
+            .widget-scratch_card img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+            }
+            .widget-scratch_card .scratch-card {
+                text-align: left;
+                position: relative;
+            }
+            .widget-scratch_card .scratch-card .scratch-wrapper {
+                position: absolute;
+                width: 100%;
+            }
+            .widget-scratch_card .scratch-card img {
+                position: absolute;
+            }
+            .widget-scratch_card .scratch-card img.bg {
+                display: none;
+            }
+            .widget-countdown {
+                text-align: center;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .widget-countdown_end-message {
+                font-size: 20px;
+                color: #222;
+            }
+            .widget-countdown_holder {
+                display: flex;
+                justify-content: center;
+            }
+            .widget-countdown_days,
+            .widget-countdown_hours,
+            .widget-countdown_minutes,
+            .widget-countdown_seconds {
+                width: 22%;
+                margin-right: 2.4%;
+                max-width: 74px;
+            }
+            .widget-countdown_days:last-child,
+            .widget-countdown_hours:last-child,
+            .widget-countdown_minutes:last-child,
+            .widget-countdown_seconds:last-child {
+                margin-right: 0;
+            }
+            .widget-countdown_days_count,
+            .widget-countdown_hours_count,
+            .widget-countdown_minutes_count,
+            .widget-countdown_seconds_count {
+                display: block;
+                font-size: 22px;
+                font-weight: bold;
+                background-color: #666;
+                color: #fff;
+                padding: 0 15px;
+                padding-top: 100%;
+                margin-bottom: 5px;
+                position: relative;
+                border: 0 solid transparent;
+            }
+            @media screen and (min-width: 375px) {
+                .widget-countdown_days_count,
+                .widget-countdown_hours_count,
+                .widget-countdown_minutes_count,
+                .widget-countdown_seconds_count {
+                    font-size: 24px;
+                }
+            }
+            @media screen and (min-width: 400px) {
+                .widget-countdown_days_count,
+                .widget-countdown_hours_count,
+                .widget-countdown_minutes_count,
+                .widget-countdown_seconds_count {
+                    font-size: 26px;
+                }
+            }
+            @media screen and (min-width: 900px) {
+                .widget-countdown_days_count,
+                .widget-countdown_hours_count,
+                .widget-countdown_minutes_count,
+                .widget-countdown_seconds_count {
+                    font-size: 22px;
+                }
+            }
+            .widget-countdown_days_count_nbr,
+            .widget-countdown_hours_count_nbr,
+            .widget-countdown_minutes_count_nbr,
+            .widget-countdown_seconds_count_nbr {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                letter-spacing: 1px;
+            }
+            .widget-countdown_days_label,
+            .widget-countdown_hours_label,
+            .widget-countdown_minutes_label,
+            .widget-countdown_seconds_label {
+                display: block;
+                font-size: 13px;
+                color: #666;
+            }
+            .widget-videoplayer video,
+            .widget-videoplayer img {
+                height: auto;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+                background-color: #222;
+            }
+            .widget-email-form {
+                padding: 14px 20px;
+                text-align: center;
+            }
+            .widget-email-form_form {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            .widget-text-form {
+                padding: 14px 20px;
+                text-align: center;
+            }
+            .widget-text-form_form {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            .widget-message-us {
+                padding: 14px 20px;
+            }
+            .btn-message-us {
+                background-color: #0084ff !important;
+                color: #fff;
+                border-radius: 3px;
+            }
+            .btn-message-us_icon {
+                width: 18px;
+                height: 18px;
+                margin-right: 7px;
+                position: relative;
+                top: -1px;
+                display: inline-block;
+                fill: currentColor;
+                vertical-align: middle;
+            }
+            .widget-facebook-messenger {
+                padding: 14px 20px;
+            }
+            .fb-send-to-messenger {
+                width: 175px;
+            }
+            .widget-shaker {
+                position: relative;
+            }
+            .widget-shaker img {
+                width: 100%;
+                display: block;
+            }
+            .widget-shaker img.fg {
+                -webkit-transition: all 600ms;
+                -moz-transition: all 600ms;
+                transition: all 600ms;
+            }
+            .widget-shaker img.bg {
+                display: none;
+            }
+            .widget-shaker_bg-img-container {
+                overflow: hidden;
+                height: 100%;
+            }
+            .widget-shaker_fg-img-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .flyaway {
+                -webkit-animation: flyaway 1500ms;
+                -moz-animation: flyaway 1500ms;
+                animation: flyaway 1500ms;
+                -webkit-animation-fill-mode: both;
+                -moz-animation-fill-mode: both;
+                animation-fill-mode: both;
+            }
+            @-webkit-keyframes flyaway {
+                0% {
+                    -webkit-transform: translate(0, 0);
+                    opacity: 1;
+                }
+                99% {
+                    opacity: 1;
+                }
+                100% {
+                    -webkit-transform: translate(-150%, 100%);
+                    opacity: 0;
+                }
+            }
+            @-moz-keyframes flyaway {
+                0% {
+                    -moz-transform: translate(0, 0);
+                    opacity: 1;
+                }
+                99% {
+                    opacity: 1;
+                }
+                100% {
+                    -moz-transform: translate(-150%, 100%);
+                    opacity: 0;
+                }
+            }
+            @keyframes flyaway {
+                0% {
+                    -webkit-transform: translate(0, 0);
+                    -moz-transform: translate(0, 0);
+                    -ms-transform: translate(0, 0);
+                    -o-transform: translate(0, 0);
+                    transform: translate(0, 0);
+                    opacity: 1;
+                }
+                99% {
+                    opacity: 1;
+                }
+                100% {
+                    -webkit-transform: translate(-150%, 100%);
+                    -moz-transform: translate(-150%, 100%);
+                    -ms-transform: translate(-150%, 100%);
+                    -o-transform: translate(-150%, 100%);
+                    transform: translate(-150%, 100%);
+                    opacity: 0;
+                }
+            }
+            .widget-flip-estore {
+                padding: 14px 2%;
+            }
+            .widget-flip-estore_products {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .widget-flip-estore_product {
+                width: 32%;
+                margin-bottom: 2%;
+            }
+            .widget-flip-estore_product img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            .widget-flip-estore_product figure {
+                width: 100%;
+                height: auto;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: 1s transform;
+                margin: 0;
+                padding: 0;
+            }
+            .widget-flip-estore_product figcaption {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                transform: rotateY(0.5turn) translateZ(1px);
+                background: rgba(255, 255, 255, 0.9);
+                text-align: center;
+                padding-top: 5%;
+                opacity: 0.6;
+                transition: 0.8s 0.5s opacity;
+            }
+            .widget-flip-estore_product:nth-child(1),
+            .widget-flip-estore_product:nth-child(2),
+            .widget-flip-estore_product:nth-child(3) {
+                margin-top: 2%;
+            }
+            .widget-flip-estore_product_title {
+                margin: 0;
+                padding: 0 3px;
+                font-size: 0.7em;
+            }
+            .widget-flip-estore_product_price {
+                margin-top: 0.5em;
+                padding: 0 3px;
+                font-size: 0.8em;
+            }
+            .btn-widget-flip-estore-buy {
+                font-size: 0.7em;
+                background-color: black;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .widget-flip-estore_product_hover:hover figure {
+                transform: rotateY(0.5turn);
+            }
+            .widget-flip-estore_product_hover:hover figure figcaption {
+                opacity: 1;
+            }
+            .widget-flip-estore_product_lightbox {
+                cursor: pointer;
+            }
+            .widget-flip-estore_products-2cols .widget-flip-estore_product {
+                width: 49%;
+            }
+            .widget-flip-estore_products-2cols .widget-flip-estore_product:nth-child(3) {
+                margin-top: 0;
+            }
+            .widget-flip-estore_lightbox {
+                display: none;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 20;
+                box-sizing: border-box;
+            }
+            .widget-flip-estore_lightbox img {
+                max-width: 100%;
+                display: block;
+                margin: auto;
+            }
+            .widget-flip-estore_lightbox figure {
+                width: 100%;
+                margin: auto;
+            }
+            .widget-flip-estore_lightbox figcaption {
+                margin: 15px auto;
+                width: 70%;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1em;
+                font-weight: 500;
+                color: #fff;
+            }
+            .widget-flip-estore_lightbox_title {
+                font-size: 1.1em;
+                font-weight: 700;
+            }
+            .btn-widget-flip-estore-buy-lightbox {
+                background-color: black;
+                color: #fff;
+            }
+            .widget-flip-card img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            .btn-clickable-slider {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .widget-clickable-slider {
+                overflow: hidden !important;
+            }
+            .widget-clickable-slider img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .widget-clickable-slider .swiper-container {
+                width: 100%;
+                background-color: #222;
+            }
+            .widget-clickable-slider .swiper-slide {
+                text-align: center;
+                position: relative;
+            }
+            .widget-clickable-slider .swiper-slide:after {
+                content: '';
+                display: block;
+                padding-top: 63.7096774194%;
+            }
+            .widget-clickable-slider .swiper-button {
+                text-align: center;
+                padding: 1em;
+            }
+            .widget-clickable-slider .swiper-pagination-bullet {
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+            .swiper-button_icon {
+                width: 26px;
+                height: 26px;
+                fill: #fff;
+            }
+            .swiper-button-prev,
+            .swiper-button-next {
+                position: absolute;
+                top: 50%;
+                width: 26px;
+                height: 26px;
+                margin-top: -13px;
+                z-index: 1;
+                -moz-background-size: 27px 44px;
+                -webkit-background-size: 27px 44px;
+                background-size: 27px 44px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .swiper-button-prev.swiper-button-white,
+            .swiper-container-rtl .swiper-button-next.swiper-button-white {
+                background-image: none;
+            }
+            .swiper-button-next,
+            .swiper-container-rtl .swiper-button-prev {
+                background-image: none;
+                right: 10px;
+                left: auto;
+            }
+            .swiper-button-prev,
+            .swiper-container-rtl .swiper-button-next {
+                background-image: none;
+                left: 10px;
+                right: auto;
+            }
+            .swiper-button-next.swiper-button-white,
+            .swiper-container-rtl .swiper-button-prev.swiper-button-white {
+                background-image: none;
+            }
+            .swiper-pagination {
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                z-index: 1;
+            }
+            .swiper-pagination-bullet {
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                border-radius: 100%;
+                background: #000;
+                opacity: 0.2;
+                margin: 0 5px;
+            }
+            .swiper-pagination-bullet {
+                background: #fff;
+            }
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+            .swiper-pagination {
+                left: 0;
+                bottom: 10px;
+            }
+            .btn-clickable-slider.btn-widget {
+                margin-left: 0;
+            }
+            .widget-code_promo {
+                padding: 14px 20px;
+            }
+            .widget-code_promo .codepromo_text_notification {
+                padding: 10px 0 0 0;
+                color: #888;
+                font-style: italic;
+                margin-top: 2px;
+                transition: display 0.5s ease-out;
+            }
+            .view-gallery .view_header {
+                background-color: rgba(255, 255, 255, 0.95);
+            }
+            .view-gallery_thumbs {
+                list-style: none;
+                margin: 20px;
+                padding: 0;
+                line-height: 0;
+                text-align: left;
+            }
+            .view-gallery_thumbs li {
+                display: inline-block;
+                width: 30%;
+                margin-right: 5%;
+                margin-bottom: 5%;
+                padding-top: 30%;
+                position: relative;
+                overflow: hidden;
+                background-color: transparent;
+                line-height: 0;
+            }
+            .view-gallery_thumbs li:nth-child(3n + 0) {
+                margin-right: 0;
+            }
+            .view-gallery_thumbs li img {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+            .view-gallery_close {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-weight: bold;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .view-gallery-2cols .view-gallery_thumbs li {
+                width: 47.5%;
+                padding-top: 47.5%;
+                margin-right: 5%;
+            }
+            .view-gallery-2cols .view-gallery_thumbs li:nth-child(3n + 0) {
+                margin-right: 5%;
+            }
+            .view-gallery-2cols .view-gallery_thumbs li:nth-child(2n + 0) {
+                margin-right: 0;
+            }
+            .view-map .place-info_site_icon,
+            .view-map .place-info_phone_icon {
+                width: 23px;
+                height: 23px;
+                min-width: 23px;
+                margin-right: 5px;
+                fill: currentColor;
+                -webkit-transition: margin-right 0.1s;
+                -moz-transition: margin-right 0.1s;
+                transition: margin-right 0.1s;
+            }
+            .view-map .place-info_site_text,
+            .view-map .place-info_phone_text {
+                font-size: 0.8em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .view-map .place-info_site,
+            .view-map .place-info_phone {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                text-align: left;
+                padding-left: 5px;
+                padding-right: 5px;
+                text-decoration: none;
+                border-right: 1px solid rgba(0, 0, 0, 0.12);
+                color: rgba(0, 0, 0, 0.67);
+            }
+            .view-map .place-info_site:last-child,
+            .view-map .place-info_phone:last-child {
+                border-right: none;
+            }
+            .view-map .view_header {
+                box-shadow: 0 2px rgba(0, 0, 0, 0.13);
+            }
+            .view-map .map {
+                height: 100%;
+            }
+            .view-map .app-map-link {
+                display: block;
+                position: absolute;
+                padding: 11px 15px;
+                right: 0;
+                top: 0;
+                line-height: 0;
+                color: currentColor;
+            }
+            .view-map .app-map-link svg {
+                width: 23px;
+                height: 23px;
+                fill: currentColor;
+            }
+            .view-map .place-info {
+                min-width: 260px;
+                max-width: 290px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                position: relative;
+                -webkit-animation: pop 0.2s;
+                -moz-animation: pop 0.2s;
+                animation: pop 0.2s;
+            }
+            .view-map .place-info_close {
+                position: absolute;
+                display: block;
+                top: 0;
+                right: 0;
+                width: 30px;
+                height: 30px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                background-color: #f7f7f7;
+                border-left: 1px solid rgba(0, 0, 0, 0.12);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            }
+            .view-map .place-info_close:active {
+                background-color: rgba(0, 0, 0, 0.67);
+            }
+            .view-map .place-info_close:active .place-info_close_icon {
+                fill: #fff;
+            }
+            .view-map .place-info_close_icon {
+                width: 11px;
+                height: 11px;
+                margin-top: 8px;
+                fill: rgba(0, 0, 0, 0.67);
+            }
+            .view-map .place-info_instructions {
+                color: #666;
+                text-align: center;
+                font-size: 0.85em;
+                line-height: 1.3em;
+                padding: 0 1em;
+                margin: 0;
+                display: flex;
+                align-items: center;
+            }
+            .view-map .place-info_address {
+                text-align: left;
+                padding: 5px 25px;
+                color: #4a4a4a;
+            }
+            .view-map .place-info_address_name {
+                margin-bottom: 5px;
+                font-weight: 700;
+                font-size: 0.95em;
+                padding-right: 15px;
+            }
+            .view-map .place-info_address_text {
+                margin-top: 0;
+                font-size: 0.9em;
+            }
+            .view-map .place-info_footer {
+                display: flex;
+                height: 44px;
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+            }
+            .place-info-overlay {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.2);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            .modal-map-app {
+                background-color: rgba(0, 0, 0, 0.4);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+            .modal-map-app_body {
+                background-color: #fff;
+                border-radius: 5px;
+                width: 180px;
+                height: 190px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                padding: 1.2em 1.2em;
+                margin-left: -90px;
+                margin-top: -95px;
+                -webkit-animation: pop 0.2s;
+                -moz-animation: pop 0.2s;
+                animation: pop 0.2s;
+            }
+            .modal-map-app_body.ios .modal-map-app_visual {
+                background-position: -54px 0;
+            }
+            .modal-map-app_visual {
+                display: block;
+                margin: 0 auto;
+                background-image: url('/logics-media/builder/img/map-app-icons.png');
+                background-size: 107px 54px;
+                width: 54px;
+                height: 54px;
+            }
+            .modal-map-app_title {
+                font-size: 0.85em;
+                color: #616161;
+                margin-bottom: 1.2em;
+            }
+            .modal-map-app_close {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                color: #858585;
+                text-decoration: none;
+            }
+            .modal-map-app_cancel,
+            .modal-map-app_yes {
+                display: inline-block;
+                color: #fff;
+                line-height: 2em;
+                border-radius: 5px;
+                width: 55px;
+                text-decoration: none;
+                font-size: 0.75em;
+            }
+            .modal-map-app_yes {
+                background-color: #207afe;
+                border: 2px solid #207afe;
+                color: #fff;
+                margin-right: 8px;
+            }
+            .modal-map-app_cancel {
+                border: 2px solid #c7c7c7;
+                color: #858585;
+            }
+            @-webkit-keyframes pop {
+                from {
+                    opacity: 0;
+                    -webkit-transform: scale(0.5);
+                }
+                to {
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                }
+            }
+            @-moz-keyframes pop {
+                from {
+                    opacity: 0;
+                    -moz-transform: scale(0.5);
+                }
+                to {
+                    opacity: 1;
+                    -moz-transform: scale(1);
+                }
+            }
+            @keyframes pop {
+                from {
+                    opacity: 0;
+                    -webkit-transform: scale(0.5);
+                    -moz-transform: scale(0.5);
+                    -ms-transform: scale(0.5);
+                    -o-transform: scale(0.5);
+                    transform: scale(0.5);
+                }
+                to {
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                    -moz-transform: scale(1);
+                    -ms-transform: scale(1);
+                    -o-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+            .view-store .view_header {
+                background-color: rgba(255, 255, 255, 0.95);
+            }
+            .view-store .pswp__bg {
+                background-color: #fff;
+            }
+            .view-store .pswp__ui--fit .pswp__top-bar,
+            .view-store .pswp__ui--fit .pswp__caption {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .view-store_products {
+                list-style: none;
+                margin: 20px;
+                padding: 0 0 1px;
+                text-align: left;
+            }
+            .view-store_products_item {
+                background-color: #f8f8f8;
+                margin-bottom: 1em;
+                position: relative;
+                color: #4e4e4e;
+                line-height: 0;
+                display: flex;
+            }
+            .view-store_products_item_img {
+                display: inline-block;
+                width: 45%;
+                max-width: 150px;
+                line-height: 0;
+            }
+            .view-store_products_item_img img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+            .view-store_products_item_info {
+                display: inline-block;
+                width: 55%;
+                padding-left: 15px;
+                padding-right: 10px;
+                vertical-align: top;
+                line-height: 1.25;
+            }
+            .view-store_products_item_title {
+                font-size: 0.8em;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            .view-store_products_item_description {
+                font-size: 0.75em;
+                margin: 5px 0;
+                font-style: italic;
+            }
+            .view-store_products_item_price {
+                font-size: 0.85em;
+                margin-top: 8px;
+                margin-bottom: 0;
+            }
+            .view-store_products_item_link {
+                border-radius: 33px 0 0 0;
+                width: 33px;
+                height: 33px;
+                background-color: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            .view-store_products_item_link_icon {
+                fill: #fff;
+                width: 18px;
+                height: 18px;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            .view-store_close {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-weight: bold;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .view-store_modal-product-info {
+                padding: 10px 2em 15px;
+                text-align: center;
+                color: #fff;
+            }
+            .view-store_modal-product-info .view-store_products_item_title {
+                margin-top: 0;
+                font-size: 1.1em;
+                line-height: 1.3;
+            }
+            .view-store_modal-product-info .view-store_products_item_description {
+                font-size: 1em;
+            }
+            .view-store_modal-product-info .view-store_products_item_price {
+                margin-bottom: 1em;
+                font-size: 1.2em;
+            }
+            .view-store_modal-product-info .btn-widget-buy-modal,
+            .view-store_modal-product-info .btn-widget-book-modal {
+                display: inline-block;
+            }
+            .btn-widget-buy-modal,
+            .btn-widget-book-modal {
+                display: none;
+                font-size: 1.1em;
+                background-color: #fff;
+            }
+            .btn-widget-buy-modal + .btn-widget-book-modal,
+            .btn-widget-book-modal + .btn-widget-book-modal {
+                margin-top: 8px;
+            }
+            .flexbox .view-store-2cols .view-store_products {
+                display: flex;
+                flex-wrap: wrap;
+                overflow: hidden;
+            }
+            .view-store-2cols .view-store_products::after {
+                clear: both;
+                content: '';
+                display: table;
+            }
+            .view-store-2cols .view-store_products_item {
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                box-orient: vertical;
+                -webkit-box-direction: normal;
+                -moz-box-direction: normal;
+                box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                flex-direction: column;
+                -ms-flex-direction: column;
+                width: 47.5%;
+                margin-right: 5%;
+                float: left;
+            }
+            .view-store-2cols .view-store_products_item:nth-child(2n + 0) {
+                margin-right: 0;
+            }
+            .view-store-2cols .view-store_products_item_img {
+                width: 100%;
+                max-width: none;
+            }
+            .view-store-2cols .view-store_products_item_info {
+                width: 100%;
+                padding-left: 10px;
+                padding-bottom: 15px;
+            }
+            .swiper-slide img {
+                max-width: 100%;
+                height: auto;
+            }
+            *,
+            *:after,
+            *:before {
+                box-sizing: border-box;
+            }
+            .app {
+                text-align: center;
+                line-height: 1.4;
+                color: #222;
+                background-color: #fff;
+                font-family: 'Helvetica', sans-serif;
+            }
+            .margins-none {
+                margin: 0;
+            }
+            .margins-vertical {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .margins-horizontal {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .margins-all-sides {
+                margin: 20px;
+            }
+            .margins-none {
+                margin: 0;
+            }
+            .padding-none {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            .padding-top {
+                padding-top: 14px;
+                padding-bottom: 0;
+            }
+            .padding-bottom {
+                padding-bottom: 14px;
+                padding-top: 0;
+            }
+            .padding-top-bottom {
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+            .window-height-hack {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: transparent;
+                z-index: -1;
+            }
+            a[href],
+            button {
+                touch-action: manipulation;
+            }
+            @media only screen and (max-device-width: 480px) {
+                body {
+                    -webkit-text-size-adjust: 100%;
+                }
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: #fff;
+                height: 100vh;
+            }
+            @media only screen and (min-width: 500px) and (min-device-width: 768px) {
+                body {
+                    background-color: #f2f2f2;
+                    overflow-x: hidden;
+                }
+            }
+            .app {
+                min-height: 100%;
+            }
+            @media only screen and (min-width: 500px) and (min-device-width: 768px) {
+                .app {
+                    margin: 0 auto;
+                    width: 500px;
+                    position: relative;
+                }
+                .app:before {
+                    content: '';
+                    display: block;
+                    background-color: #f2f2f2;
+                    width: 3000px;
+                    height: 100%;
+                    min-height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    z-index: 10;
+                }
+            }
+            .app {
+                font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+                background-color: #fff;
+                color: #000;
+                font-weight: 300;
+            }
+            .view_header {
+                background-color: #fff;
+                padding-bottom: 12px;
+                color: #000;
+            }
+            .view_header_title {
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .view_header_back_icon {
+                width: 18px;
+            }
+            .view-gallery .view_header {
+                background-color: #fff;
+            }
+            .view-map {
+                background-color: #fff;
+            }
+            .place-info_address_icon,
+            .place-info_address_text,
+            .place-info_phone_icon,
+            .place-info_phone_text,
+            .place-info_site_icon,
+            .place-info_site_text {
+                color: #000;
+            }
+            .widget-btn-download-app_title {
+                font-weight: 300;
+            }
+            div.widget-barcode {
+                background-color: #fff;
+            }
+            .btn-widget {
+                background-color: #00bdd1;
+                color: #fff;
+                border-radius: none;
+                font-size: 14px;
+                padding: 1em 1.5em 1em 1.5em;
+            }
+            .widget-conditions {
+                background-color: #fff;
+                font-weight: 300;
+            }
+            .btn-show-conditions {
+                background-color: transparent;
+                font-size: 12px;
+                font-weight: 300;
+                color: #373f40;
+                text-align: left;
+            }
+            .widget-conditions_text {
+                font-size: 10px;
+                text-align: left;
+            }
+            .widget-countdown_days_count,
+            .widget-countdown_hours_count,
+            .widget-countdown_minutes_count,
+            .widget-countdown_seconds_count {
+                background-color: #00bdd1;
+                border-radius: none;
+            }
+            .end-message {
+                color: #00bdd1;
+            }
+            .input-widget-email {
+                margin-bottom: 15px;
+                border-radius: none;
+                border-color: transparent;
+                padding: 20px 10px;
+                font-size: 0.8em;
+            }
+            .btn-widget-submit {
+                height: 40px;
+                border-radius: none;
+                padding: 2px;
+            }
+            .btn-gallery {
+                background-color: transparent;
+                border: 2px solid #00bdd1;
+                color: #00bdd1;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding: 0.8em 2em 0.7em 2em;
+            }
+            div.widget-nearest-place-map {
+                background-color: #f2f2f2;
+            }
+            .nearest-place_title {
+                font-size: 14px;
+                font-style: italic;
+            }
+            .nearest-place_link a {
+                font-size: 14px;
+                color: #00bdd1;
+                text-decoration: none;
+            }
+            div.nearest-place_actions {
+                font-size: 16px;
+            }
+            a.btn-widget.btn-go-place {
+                background-color: #00bdd1;
+                margin-left: 3%;
+            }
+            .btn-phone-place_icon,
+            .btn-go-place_icon {
+                position: relative;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                margin-bottom: -3px;
+                margin-right: 5px;
+            }
+            .widget-btn-places-map {
+                background-color: #f2f2f2;
+                padding-top: 0px;
+                padding-bottom: 20px;
+            }
+            a.btn-widget.btn-places-map {
+                background-color: transparent;
+                border: 2px solid #00bdd1;
+                color: #00bdd1;
+                padding: 1em 2em 1em 2em;
+                font-size: 0.8em;
+            }
+            .btn-places-map_icon {
+                position: relative;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                margin-bottom: -2px;
+                margin-right: 5px;
+            }
+            .widget-slider .swiper-container {
+                background-color: #fff;
+            }
+            .input-widget-text {
+                border-radius: none;
+                border-color: transparent;
+                padding: 20px 10px 40px 15px;
+                font-size: 0.9em;
+            }
+            .widget-text-form_form > .btn-widget-submit {
+                border-radius: none;
+            }
+            .widget-title h1 {
+                font-size: 1.2em;
+            }
+            .offscreen {
+                position: fixed !important;
+                left: -9999px !important;
+                display: inline !important;
+            }
+            .demo-modal {
+                font-family: 'Roboto', Helvetica, Arial, sans-serif;
+                font-weight: 300;
+                background-color: #fff;
+                box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+                padding: 24px;
+                width: 80%;
+                position: relative;
+                display: none;
+                text-align: center;
+            }
+            #widget_sfr_form {
+                margin: 0 20px;
+            }
+            #widget_sfr_form label {
+                font-size: 0.9em !important;
+            }
+            #widget_1cc9 {
+                height: 470px;
+                padding: 0px 0;
+                background-image: url('./sfr_files/0e035d56-0b20-43ed-9220-bd5d50fb4de4.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            body {
+                margin: 0;
+            }
+            body * {
+                outline: none;
+            }
+            .game-container {
+                position: relative;
+                width: 100%;
+                height: 400px;
+                color: #000;
+                font-family: sans-serif;
+                text-align: center;
+            }
+            .instructions {
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                font-size: 1.571em;
+                padding-top: 30px;
+            }
+            .shell-game {
+                position: relative;
+                width: 99%;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+            }
+            .cups-box {
+                position: absolute;
+                height: 100%;
+                margin: auto;
+                left: 22%;
+                right: 0;
+            }
+            .cup {
+                position: absolute;
+                width: 60px;
+                height: 75px;
+                background-image: url('./sfr_files/ba8668e4-9794-48fb-a526-d1538463f794.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 142px;
+                left: 0px;
+                pointer-events: auto;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            }
+            .cup-2 {
+                left: 65px;
+            }
+            .cup-3 {
+                left: 130px;
+            }
+            #ball {
+                position: absolute;
+                width: 60px;
+                height: 75px;
+                background-image: url('./sfr_files/554e1d03-548e-429e-b52f-d43b0bb154f5.png');
+                background-repeat: no-repeat;
+                left: 50px;
+                top: 142px;
+                background-size: contain;
+            }
+            #ball2 {
+                position: absolute;
+                width: 60px;
+                height: 75px;
+                background-image: url('./sfr_files/554e1d03-548e-429e-b52f-d43b0bb154f5.png');
+                background-repeat: no-repeat;
+                left: 0px;
+                top: 142px;
+                background-size: contain;
+                display: none;
+            }
+            #ball3 {
+                position: absolute;
+                width: 60px;
+                height: 75px;
+                background-image: url('./sfr_files/554e1d03-548e-429e-b52f-d43b0bb154f5.png');
+                background-repeat: no-repeat;
+                left: 130px;
+                top: 142px;
+                background-size: contain;
+                display: none;
+            }
+            #ballWin1 {
+                position: absolute;
+                width: 60px;
+                height: 75px;
+                background-image: url('./sfr_files/554e1d03-548e-429e-b52f-d43b0bb154f5.png');
+                background-repeat: no-repeat;
+                left: 0;
+                top: 142px;
+                background-size: contain;
+                display: none;
+            }
+            #ballWin2 {
+                position: absolute;
+                width: 60px;
+                height: 75px;
+                background-image: url('./sfr_files/554e1d03-548e-429e-b52f-d43b0bb154f5.png');
+                background-repeat: no-repeat;
+                left: 65px;
+                top: 142px;
+                background-size: contain;
+                display: none;
+            }
+            #ballWin3 {
+                position: absolute;
+                width: 60px;
+                height: 75px;
+                background-image: url('./sfr_files/554e1d03-548e-429e-b52f-d43b0bb154f5.png');
+                background-repeat: no-repeat;
+                left: 130px;
+                top: 142px;
+                background-size: contain;
+                display: none;
+            }
+            #zoneStart {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            #btnStart {
+                cursor: pointer;
+                width: 80%;
+                border: 0;
+                background-color: #ef0005;
+                font-size: 1em;
+                font-weight: 700;
+                color: #fff;
+                padding: 14px 20px;
+            }
+            @media screen and (max-width: 320px) {
+                .cup {
+                    top: 110px;
+                    width: 58px;
+                }
+                .cups-box {
+                    left: 20%;
+                }
+                .game-container {
+                    height: 361px;
+                }
+                #widget_1cc9 {
+                    height: 390px;
+                }
+                #ball {
+                    width: 53px;
+                    top: 110px;
+                }
+                #ball2 {
+                    width: 53px;
+                    top: 110px;
+                }
+                #ball3 {
+                    width: 53px;
+                    top: 110px;
+                }
+                #ballWin1 {
+                    width: 53px;
+                    top: 110px;
+                }
+                #ballWin2 {
+                    width: 53px;
+                    top: 110px;
+                }
+                #ballWin3 {
+                    width: 53px;
+                    top: 110px;
+                }
+            }
+            @media screen and (min-width: 321px) and (max-width: 360px) and (min-height: 500px) and (max-height: 517px) {
+                .cup {
+                    top: 110px;
+                    width: 58px;
+                }
+                .cups-box {
+                    left: 20%;
+                }
+                .game-container {
+                    height: 393px;
+                }
+                #widget_1cc9 {
+                    height: 400px;
+                }
+                #ball {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ball2 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ball3 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin1 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin2 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin3 {
+                    width: 53px;
+                    top: 115px;
+                }
+            }
+            @media screen and (min-width: 321px) and (max-width: 360px) and (min-height: 518px) and (max-height: 560px) {
+                .cup {
+                    top: 115px;
+                    width: 60px;
+                }
+                .cups-box {
+                    left: 22%;
+                }
+                .game-container {
+                    height: 393px;
+                }
+                #widget_1cc9 {
+                    height: 400px;
+                }
+                #ball {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ball2 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ball3 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin1 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin2 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin3 {
+                    width: 53px;
+                    top: 115px;
+                }
+            }
+            @media screen and (min-width: 321px) and (max-width: 360px) and (min-height: 561px) {
+                .cup {
+                    top: 115px;
+                    width: 60px;
+                }
+                .cups-box {
+                    left: 22%;
+                }
+                .game-container {
+                    height: 393px;
+                }
+                #widget_1cc9 {
+                    height: 400px;
+                }
+                #ball {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ball2 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ball3 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin1 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin2 {
+                    width: 53px;
+                    top: 115px;
+                }
+                #ballWin3 {
+                    width: 53px;
+                    top: 115px;
+                }
+            }
+            @media screen and (min-width: 361px) and (max-width: 375px) {
+                .cup {
+                    top: 121px;
+                    width: 64px;
+                }
+                .cups-box {
+                    left: 20%;
+                }
+                .game-container {
+                    height: 422px;
+                }
+                #widget_1cc9 {
+                    height: 430px;
+                }
+                #ball {
+                    width: 53px;
+                    top: 122px;
+                }
+                #ball2 {
+                    width: 53px;
+                    top: 122px;
+                }
+                #ball3 {
+                    width: 53px;
+                    top: 122px;
+                }
+                #ballWin1 {
+                    width: 53px;
+                    top: 122px;
+                }
+                #ballWin2 {
+                    width: 53px;
+                    top: 122px;
+                }
+                #ballWin3 {
+                    width: 53px;
+                    top: 122px;
+                }
+            }
+            @media screen and (min-width: 376px) and (max-width: 414px) {
+                .cup {
+                    top: 142px;
+                    width: 61px;
+                }
+                .cups-box {
+                    left: 25%;
+                }
+                .game-container {
+                    height: 435px;
+                }
+                #widget_1cc9 {
+                    height: 430px;
+                }
+                #ball {
+                    width: 53px;
+                    top: 142px;
+                }
+                #ball2 {
+                    width: 53px;
+                    top: 142px;
+                }
+                #ball3 {
+                    width: 53px;
+                    top: 142px;
+                }
+                #ballWin1 {
+                    width: 53px;
+                    top: 142px;
+                }
+                #ballWin2 {
+                    width: 53px;
+                    top: 142px;
+                }
+                #ballWin3 {
+                    width: 53px;
+                    top: 142px;
+                }
+            }
+            @media screen and (min-width: 415px) and (max-width: 470px) {
+                .cup {
+                    top: 166px;
+                    width: 66px;
+                }
+                .cups-box {
+                    left: 26%;
+                }
+                .game-container {
+                    height: 464px;
+                }
+                #widget_1cc9 {
+                    height: 492px;
+                }
+                #ball {
+                    width: 53px;
+                    top: 168px;
+                }
+                #ball2 {
+                    width: 53px;
+                    top: 168px;
+                }
+                #ball3 {
+                    width: 53px;
+                    top: 168px;
+                }
+                #ballWin1 {
+                    width: 53px;
+                    top: 168px;
+                }
+                #ballWin2 {
+                    width: 53px;
+                    top: 168px;
+                }
+                #ballWin3 {
+                    width: 53px;
+                    top: 168px;
+                }
+            }
+            @media (min-width: 768px) {
+                .cup {
+                    top: 190px;
+                    width: 65px;
+                }
+                .cups-box {
+                    left: 29%;
+                }
+                .game-container {
+                    height: 512px;
+                }
+                #widget_1cc9 {
+                    height: 529px;
+                }
+                #ball {
+                    width: 53px;
+                    top: 193px;
+                }
+                #ball2 {
+                    width: 53px;
+                    top: 193px;
+                }
+                #ball3 {
+                    width: 53px;
+                    top: 193px;
+                }
+                #ballWin1 {
+                    width: 53px;
+                    top: 193px;
+                }
+                #ballWin2 {
+                    width: 53px;
+                    top: 193px;
+                }
+                #ballWin3 {
+                    width: 53px;
+                    top: 193px;
+                }
+            }
+            .widget-centre_interet {
+                padding: 2%;
+            }
+            .widget-centre_interet_lists {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .widget-centre_interet_item {
+                width: 32%;
+            }
+            .widget-centre_interet_item img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            .widget-centre_interet_item figure {
+                width: 100%;
+                height: auto;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: 1s transform;
+                margin: 0;
+                padding: 0;
+            }
+            .widget-centre_interet_item figcaption {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                transform: rotateY(0.5turn) translateZ(1px);
+                text-align: center;
+                padding-top: 5%;
+                opacity: 0.6;
+                transition: 0.8s 0.5s opacity;
+            }
+            .wchecked figure {
+                transform: rotateY(0.5turn);
+            }
+            .wchecked figcaption {
+                opacity: 1;
+            }
+            figcaption p {
+                margin-top: -32px;
+                padding: 5px 0;
+                font-size: 0.8em;
+                color: #ffffff;
+                background-color: #000;
+            }
+            .front {
+                position: absolute;
+                width: 100%;
+                margin-top: 85px;
+                padding: 5px 0;
+                font-size: 0.8em;
+                color: #ffffff;
+                background-color: #000;
+            }
+            .wchecked .front {
+                opacity: 0;
+            }
+            #aucun-centre_interet {
+                display: none;
+                color: red;
+                font-size: 0.9em;
+                font-weight: 300;
+                margin: 0 !important;
+            }
+            @media (min-width: 768px) {
+                .front {
+                    position: absolute;
+                    width: 100%;
+                    margin-top: 131px;
+                    padding: 5px 0;
+                    font-size: 0.8em;
+                    color: #ffffff;
+                    background-color: #000;
+                }
+            }
+            .demo-modal {
+                font-family: 'Roboto', Helvetica, Arial, sans-serif;
+                font-weight: 300;
+                background-color: #fff;
+                box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+                padding: 24px;
+                width: 80%;
+                position: relative;
+                display: none;
+                text-align: center;
+            }
+            #widget_sfr_form {
+                margin: 0 20px;
+            }
+            #widget_sfr_form label {
+                font-size: 0.9em !important;
+            }
+            #home > div {
+                display: none;
+            }
+            #home > div#widget_dc0d,
+            #home > div#widget_1862,
+            #home > div#widget_cd7c,
+            #home > div.loaded {
+                display: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="app" style="">
+            <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="icon-arrow-left" viewBox="0 0 1024 1024">
+                        <title>arrow-left</title>
+                        <path class="path1" d="M364.8 499.2l428.8-403.2c25.6-25.6 25.6-57.6 0-83.2s-64-25.6-83.2 0l-473.6 448c0 0 0 0 0 0-25.6 25.6-25.6 57.6 0 83.2l473.6 467.2c25.6 25.6 64 25.6 83.2 0 25.6-25.6 25.6-57.6 0-83.2l-428.8-428.8z"></path>
+                    </symbol>
+                    <symbol id="icon-arrow-right" viewBox="0 0 1024 1024">
+                        <title>arrow-right</title>
+                        <path class="path1" d="M787.2 480l-467.2-460.8c-25.6-25.6-64-25.6-83.2 0-25.6 25.6-25.6 57.6 0 83.2l428.8 422.4-428.8 403.2c-25.6 25.6-25.6 57.6 0 83.2s64 25.6 83.2 0l473.6-441.6c0 0 0 0 0 0 19.2-25.6 19.2-64-6.4-89.6z"></path>
+                    </symbol>
+                    <symbol id="icon-place-marker" viewBox="0 0 1024 1024">
+                        <title>place-marker</title>
+                        <path class="path1" d="M512 0c-281.6 0-512 230.4-512 512s230.4 512 512 512c281.6 0 512-230.4 512-512s-230.4-512-512-512zM512 774.4c-96-160-166.4-268.8-166.4-358.4s76.8-166.4 166.4-166.4c89.6 0 166.4 76.8 166.4 166.4s-70.4 198.4-166.4 358.4z"></path>
+                    </symbol>
+                    <symbol id="icon-place-phone" viewBox="0 0 1024 1024">
+                        <title>place-phone</title>
+                        <path class="path1" d="M512 0c-281.6 0-512 230.4-512 512s230.4 512 512 512 512-230.4 512-512c0-281.6-230.4-512-512-512zM659.2 761.6c-160 70.4-403.2-403.2-249.6-486.4 0 0 44.8-19.2 44.8-19.2l76.8 147.2-44.8 19.2c-44.8 25.6 51.2 217.6 96 192 0 0 44.8-19.2 44.8-19.2l76.8 147.2c0-6.4-44.8 19.2-44.8 19.2v0z"></path>
+                    </symbol>
+                    <symbol id="icon-place-site" viewBox="0 0 1024 1024">
+                        <title>place-site</title>
+                        <path class="path1" d="M512 0c-281.6 0-512 230.4-512 512s230.4 512 512 512 512-230.4 512-512-230.4-512-512-512zM556.8 678.4v-96c0 0-160-6.4-300.8 140.8 64-281.6 300.8-332.8 300.8-332.8v-89.6l211.2 185.6-211.2 192z"></path>
+                    </symbol>
+                    <symbol id="icon-external-map" viewBox="0 0 1024 1024">
+                        <title>external-map</title>
+                        <path class="path1" d="M486.4 640c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c6.4-6.4 198.4-179.2 198.4-358.4 0-121.6-102.4-224-224-224s-224 102.4-224 224c0 179.2 192 352 198.4 358.4zM512 224c32 0 57.6 25.6 57.6 57.6s-25.6 57.6-57.6 57.6c-32 0-57.6-25.6-57.6-57.6s25.6-57.6 57.6-57.6zM940.8 640l-25.6-89.6c-6.4-12.8-19.2-25.6-32-25.6h-185.6c-6.4 12.8-12.8 19.2-19.2 32-51.2 70.4-102.4 115.2-108.8 121.6-12.8 12.8-32 19.2-57.6 19.2-19.2 0-38.4-6.4-57.6-19.2-6.4-6.4-57.6-51.2-108.8-121.6-6.4-12.8-12.8-19.2-19.2-32h-185.6c-12.8 0-32 12.8-32 25.6l-32 108.8 691.2 128 172.8-147.2zM1024 921.6l-64-230.4-326.4 275.2h364.8c12.8 0 19.2-6.4 25.6-12.8 0-12.8 0-19.2 0-32zM0 921.6c0 12.8 0 19.2 6.4 32 6.4 6.4 19.2 12.8 25.6 12.8h134.4v-243.2l-102.4-19.2-64 217.6zM217.6 729.6v230.4h339.2l166.4-140.8-505.6-89.6z"></path>
+                    </symbol>
+                    <symbol id="icon-phone-button" viewBox="0 0 1024 1024">
+                        <title>phone-button</title>
+                        <path class="path1" d="M768 1011.2c-320 140.8-806.4-806.4-499.2-972.8l89.6-38.4 153.6 294.4-89.6 38.4c-89.6 51.2 102.4 435.2 192 384l89.6-38.4 153.6 294.4c0-12.8-89.6 38.4-89.6 38.4v0z"></path>
+                    </symbol>
+                    <symbol id="icon-marker" viewBox="0 0 1024 1024">
+                        <title>marker</title>
+                        <path class="path1" d="M512 0c-179.2 0-339.2 147.2-339.2 326.4s147.2 390.4 339.2 697.6c192-307.2 339.2-518.4 339.2-697.6s-160-326.4-339.2-326.4zM512 467.2c-70.4 0-128-57.6-128-128s57.6-128 128-128 128 57.6 128 128-57.6 128-128 128z"></path>
+                    </symbol>
+                    <symbol id="icon-markers" viewBox="0 0 1024 1024">
+                        <title>markers</title>
+                        <path class="path1" d="M262.4 595.2c-12.8 6.4-25.6 12.8-38.4 12.8-44.8 0-83.2-38.4-83.2-83.2 0-38.4 25.6-70.4 64-83.2-12.8-32-12.8-64-12.8-96 0-12.8 0-25.6 0-44.8-102.4 19.2-192 108.8-192 211.2 0 115.2 96 256 224 454.4 51.2-83.2 96-153.6 134.4-211.2-38.4-57.6-70.4-108.8-96-160z"></path>
+                        <path class="path2" d="M844.8 307.2c0 12.8 6.4 25.6 6.4 38.4 0 32-6.4 64-12.8 96 32 12.8 51.2 44.8 51.2 76.8 0 44.8-38.4 83.2-83.2 83.2-12.8 0-19.2 0-32-6.4-25.6 51.2-57.6 108.8-96 166.4 38.4 57.6 76.8 128 128 204.8 121.6-198.4 217.6-332.8 217.6-454.4 0-102.4-83.2-185.6-179.2-204.8z"></path>
+                        <path class="path3" d="M512 51.2c160 0 307.2 134.4 307.2 294.4s-134.4 352-307.2 627.2c-172.8-275.2-307.2-460.8-307.2-627.2s147.2-294.4 307.2-294.4zM512 473.6c64 0 115.2-51.2 115.2-115.2s-51.2-115.2-115.2-115.2c-64 0-115.2 51.2-115.2 115.2s51.2 115.2 115.2 115.2z"></path>
+                    </symbol>
+                    <symbol id="icon-android-store" viewBox="0 0 1024 1024">
+                        <title>android-store</title>
+                        <path class="path1" d="M710.4 0h-396.8c-44.8 0-76.8 38.4-76.8 83.2v857.6c0 44.8 38.4 83.2 83.2 83.2h390.4c44.8 0 83.2-38.4 83.2-83.2v-857.6c-6.4-44.8-38.4-83.2-83.2-83.2zM467.2 76.8h89.6c6.4 0 12.8 6.4 12.8 12.8s-6.4 12.8-12.8 12.8h-89.6c-6.4 0-12.8-6.4-12.8-12.8 6.4-12.8 6.4-12.8 12.8-12.8zM512 979.2c-19.2 0-38.4-19.2-38.4-38.4 0-25.6 19.2-44.8 38.4-44.8s38.4 19.2 38.4 38.4c6.4 25.6-12.8 44.8-38.4 44.8zM729.6 851.2h-435.2v-678.4h428.8v678.4z"></path>
+                        <path class="path2" d="M371.2 441.6c-12.8 0-25.6 12.8-25.6 25.6v102.4c0 12.8 12.8 25.6 25.6 25.6s25.6-12.8 25.6-25.6v-102.4c0-12.8-12.8-25.6-25.6-25.6zM563.2 352l19.2-32c0 0 0-6.4 0-6.4-6.4 0-6.4 6.4-6.4 6.4l-12.8 32c-38.4-19.2-70.4-19.2-102.4 0l-12.8-32c0 0 0 0-6.4 0 0 0 0 0 0 6.4l19.2 32c-32 12.8-57.6 44.8-57.6 83.2h217.6c0-38.4-25.6-70.4-57.6-89.6zM460.8 403.2c-6.4 0-6.4-6.4-6.4-6.4 0-12.8 6.4-12.8 6.4-12.8 6.4 0 12.8 0 12.8 6.4s-6.4 12.8-12.8 12.8zM563.2 403.2c-6.4 0-6.4-6.4-6.4-6.4-6.4-12.8 0-12.8 6.4-12.8 0 0 6.4 0 6.4 6.4s-6.4 12.8-6.4 12.8zM403.2 448v153.6c0 12.8 12.8 25.6 25.6 25.6h19.2v51.2c0 19.2 12.8 25.6 25.6 25.6s25.6-12.8 25.6-25.6v-51.2h32v51.2c0 12.8 12.8 25.6 25.6 25.6 6.4 0 19.2-6.4 19.2-19.2v-57.6h19.2c12.8 0 25.6-12.8 25.6-25.6v-153.6h-217.6zM678.4 467.2c0-12.8-12.8-25.6-25.6-25.6s-25.6 12.8-25.6 25.6v102.4c0 12.8 12.8 25.6 25.6 25.6s25.6-12.8 25.6-25.6v-102.4z"></path>
+                    </symbol>
+                    <symbol id="icon-app-store" viewBox="0 0 1024 1024">
+                        <title>app-store</title>
+                        <path class="path1" d="M710.4 0h-396.8c-44.8 0-76.8 38.4-76.8 83.2v857.6c0 44.8 38.4 83.2 83.2 83.2h390.4c44.8 0 83.2-38.4 83.2-83.2v-857.6c-6.4-44.8-38.4-83.2-83.2-83.2zM467.2 76.8h89.6c6.4 0 12.8 6.4 12.8 12.8s-6.4 12.8-12.8 12.8h-89.6c-6.4 0-12.8-6.4-12.8-12.8 6.4-12.8 6.4-12.8 12.8-12.8zM512 979.2c-19.2 0-38.4-19.2-38.4-38.4 0-25.6 19.2-44.8 38.4-44.8s38.4 19.2 38.4 38.4c6.4 25.6-12.8 44.8-38.4 44.8zM729.6 851.2h-435.2v-678.4h428.8v678.4z"></path>
+                        <path class="path2" d="M659.2 588.8c-12.8 32-44.8 96-83.2 96-25.6 0-32-12.8-57.6-12.8s-38.4 12.8-57.6 12.8c-38.4 0-96-89.6-96-166.4 0-70.4 44.8-108.8 89.6-108.8 25.6 0 44.8 19.2 57.6 19.2s44.8-19.2 70.4-19.2c12.8 0 44.8 6.4 70.4 38.4-57.6 32-51.2 115.2 6.4 140.8zM582.4 320c-38.4 0-76.8 44.8-70.4 83.2 38.4 6.4 76.8-38.4 70.4-83.2z"></path>
+                    </symbol>
+                    <symbol id="icon-basket" viewBox="0 0 32 32">
+                        <title>basket</title>
+                        <path class="path1" d="M6 9.4l6.2-6.2c0.2-0.2 0.6-0.4 1-0.4 0.8 0 1.4 0.6 1.4 1.4 0 0.4-0.2 0.6-0.4 1l-4.2 4.2h-4zM22 9.4h4l-6.4-6.2c-0.2-0.2-0.6-0.4-1-0.4-0.8 0-1.4 0.6-1.4 1.4 0 0.4 0.2 0.6 0.4 1l4.4 4.2zM32 12v2.6h-0.8c-0.8 0-1.4 0.4-1.6 1l-5.6 13.6h-16l-5.4-13.4c-0.4-0.8-1-1.2-1.8-1.2h-0.8v-2.6h32zM12 17.4c0-0.8-0.6-1.4-1.4-1.4-0.6 0-1.2 0.6-1.2 1.4v6.6c0 0.8 0.6 1.4 1.4 1.4 0.6-0.2 1.2-0.8 1.2-1.4v-6.6zM17.4 17.4c0-0.8-0.6-1.4-1.4-1.4s-1.4 0.6-1.4 1.4v6.6c0 0.8 0.6 1.4 1.4 1.4s1.4-0.6 1.4-1.4v-6.6zM22.6 17.4c0-0.8-0.6-1.4-1.2-1.4s-1.4 0.6-1.4 1.4v6.6c0 0.8 0.6 1.4 1.4 1.4s1.4-0.6 1.4-1.4v-6.6z"></path>
+                    </symbol>
+                    <symbol id="icon-submit-arrow" viewBox="0 0 32 32">
+                        <title>submit-arrow</title>
+                        <path class="path1" d="M9 32c-0.6 0-1.4-0.2-1.8-0.8-1-1-1-2.8 0-3.8l12.2-11.8-12-11c-1.4-1-1.4-2.6-0.4-3.8 1-1 2.6-1 3.8-0.2l14.2 13c0.6 0.4 0.8 1.2 0.8 2s-0.2 1.4-0.8 2l-14.2 13.8c-0.6 0.4-1.2 0.6-1.8 0.6z"></path>
+                    </symbol>
+                    <symbol id="icon-close" viewBox="0 0 32 32">
+                        <path class="path1" d="M26 1.2l-10 10-10-10c-1.2-1-3.2-1.2-4.6 0.2s-1 3.2 0.2 4.6l10 10-10.6 10.6c-1.2 1.2-1.2 3.2 0 4.4s3.4 1.2 4.6-0.2l10.4-10.4 10.4 10.4c1.2 1.2 3.4 1.4 4.6 0.2s1.2-3.6 0-4.8l-10.4-10.4 10-10c1.2-1.2 1.2-3.2 0-4.4-1.4-1.6-3.4-1.6-4.6-0.2z"></path>
+                    </symbol>
+                    <symbol id="icon-facebook-messenger" viewBox="0 0 32 32">
+                        <title>facebook-messenger</title>
+                        <path d="M16 0c-8.782 0-15.902 6.632-15.902 14.814 0 4.662 2.312 8.82 5.926 11.536v5.65l5.414-2.99c1.444 0.402 2.976 0.62 4.562 0.62 8.782 0 15.902-6.632 15.902-14.814s-7.12-14.816-15.902-14.816zM17.58 19.95l-4.050-4.346-7.9 4.346 8.69-9.284 4.148 4.346 7.802-4.346-8.69 9.284z"></path>
+                    </symbol>
+                </defs>
+            </svg>
+            <div class="window-height-hack"></div>
+            <div class="effect"></div>
+            <div id="home" class="page widgets">
+                <div id="widget_051d" class="widget-custom offscreen loaded" data-key="051d">
+                    <!--Page system -->
+                </div>
+                <div id="widget_dc0d" class="widget-logo margins-none padding-top-bottom loaded" style="background-color: rgb(0, 0, 0); text-align: left;" data-key="dc0d">
+                    <img src="./sfr_files/26a961a6-5278-4af4-909b-62736df1010e.jpg" class="logo-small" />
+                </div>
+                <div id="widget_944d" class="widget-title margins-none padding-bottom loaded" style="background-color: rgb(0, 0, 0);" data-key="944d">
+                    <h1 style="color: rgb(255, 255, 255); text-align: left; font-size: 18px;" class="">Découvrez immédiatement si&nbsp;vous&nbsp;êtes&nbsp;<span style="color: #ef0005;">le gagnant</span></h1>
+                </div>
+                <div id="widget_ad60" class="widget-title margins-none padding-top loaded" style="" data-key="ad60">
+                    <h1 style="font-size: 20px;" class=""><b>A gagner : 10000 Samsung Galaxy S20</b></h1>
+                </div>
+                <div id="widget_b65c" class="widget-image margins-none padding-top-bottom loaded" style="" data-key="b65c">
+                    <div class="image-wrapper">
+                        <div class="">
+                            <img src="./sfr_files/96472470-bbf9-4a2e-a0f8-4faad9184358.jpg" class="image-widget" />
+                        </div>
+                    </div>
+                </div>
+                <div id="widget_1862" class="widget-spacer offscreen loaded" style="height: 20px;" data-key="1862"></div>
+                <div id="widget_sfr_form" class="widget-custom loaded" data-key="6bf4">
+                    <form class="monformulaire">
+                        <input type="hidden" name="campaign_id" value="184534f8-4124-475d-abf1-edbe7e76d206" />
+                        <input type="hidden" name="csv_name" value="instant_gagnant" />
+                        <input type="hidden" name="fields" value="msisdn,checkbox,date" />
+                        <input type="hidden" name="msisdn" value="8f17ee76de441d60f404b9035a2a7071696b4f53dc29c8efeafe77b415609ee0" />
+                        <input type="hidden" name="date" />
+                        <input type="hidden" class="checkbox" name="checkbox" value="checked" id="Oui" />
+
+                        <div class="widget-btn margins-none padding-top-bottom">
+                            <button id="btnParticiper" class="btn-widget btn-widget-medium btn-widget-big-width" style="background-color: #ef0005;"><strong>Tentez votre chance</strong></button>
+                        </div>
+                    </form>
+                </div>
+                <div id="widget_cd7c" class="widget-image margins-horizontal padding-top-bottom offscreen loaded" style="" data-key="cd7c">
+                    <div class="image-wrapper">
+                        <div class="">
+                            <img src="./sfr_files/d7b1ae4a-6541-4c4d-aefe-7606d640b99c.gif" class="image-widget" />
+                        </div>
+                    </div>
+                </div>
+                <div id="widget_c29a" class="widget-text margins-none padding-none offscreen loaded" style="" data-key="c29a">
+                    <div style="">
+                        <p>
+                            <em style="font-size: 0.9em;"><strong>10000 Samsung Galaxy S20 sont à gagner !</strong></em
+                            ><br />
+                        </p>
+                    </div>
+                </div>
+                <div id="widget_3a9a" class="widget-custom offscreen loaded" data-key="3a9a"></div>
+                <div id="widget_1cc9" class="widget-custom offscreen loaded" data-key="1cc9">
+                    <div class="game-container">
+                        <!--<p class="instructions">
+      Find the ball
+    </p>-->
+                        <div class="shell-game">
+                            <div class="cups-box">
+                                <div id="cup1" class="cup cup-1"></div>
+                                <div id="cup2" class="cup cup-2"></div>
+                                <div id="cup3" class="cup cup-3"></div>
+                                <div id="ball"></div>
+                                <div id="ball2"></div>
+                                <div id="ball3"></div>
+                                <div id="ballWin1"></div>
+                                <div id="ballWin2"></div>
+                                <div id="ballWin3"></div>
+                            </div>
+                        </div>
+
+                        <div id="zoneStart">
+                            <p><span style="color: #ef0005; font-weight: 700;">Sélectionnez votre gobelet</span><br />et découvrez si <span style="color: #ef0005; font-weight: 700;">vous avez gagné !</span></p>
+                            <button id="btnStart">Retournez le gobelet</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="widget_0431" class="widget-title margins-none padding-none offscreen loaded" style="" data-key="0431">
+                    <h1 style="color: rgb(239, 0, 5); font-size: 38px;" class="">Bravo !</h1>
+                </div>
+                <div id="widget_69c3" class="widget-image margins-none padding-bottom offscreen loaded" style="" data-key="69c3">
+                    <div class="image-wrapper">
+                        <div class="">
+                            <img src="./sfr_files/2dcdac85-5bb1-4500-ae7e-c57aeea09088.png" class="image-widget" />
+                        </div>
+                    </div>
+                </div>
+                <div id="widget_bb84" class="widget-text margins-none padding-bottom offscreen loaded" style="" data-key="bb84">
+                    <div style="">
+                        <p>
+                            <span style="font-size: 1.2em;">Vous avez gagné un </span><span style="font-size: 1.2em; font-weight: bold; color: rgb(239, 0, 5);"> <br />Samsung Galaxy S20&nbsp;</span><span style="font-size: 1.2em;">!</span>
+                        </p>
+                        <p style="font-size: 0.9em;">Veuillez cliquer ci-dessous pour programmer la livraison de votre lot.</p>
+                    </div>
+                    <div class="widget-btn margins-none padding-top-bottom">
+                        <button class="btn-widget btn-widget-medium btn-widget-big-width" style="background-color: #ef0005;">
+                            <strong><a style="color: #fff; text-decoration: none; cursor: pointer;" href="https://mobi.billiwa.com/ofc/5a292cd2-d1f2c539-47ef4f50-351e-e65c/6080e3e9-ffdae321-d4cd3e40-c011-1533?Subid={YOUR_PUBID_HERE}&sub_pubid={YOUR_SUB_PUBID_HERE}&externalid={YOUR_CLICKID_HERE}">Programmer la livraison</a></strong>
+                        </button>
+                    </div>
+                    <div style="">
+                        <p style="font-size: 0.8em; font-style: italic; color: rgb(39, 38, 38);">L'expédition se fera aprés paiement des frais de livraison chronopost <b>(2€)</b>.</p>
+                    </div>
+                </div>
+                <div id="widget_95f0" class="widget-text margins-none padding-bottom offscreen loaded" style="" data-key="95f0">
+                    <div style="">
+                        <p>
+                            <strong style="font-size: 1.3em;"> <span style="font-weight: bold; color: #ef0005;">C'est perdu !&nbsp;</span></strong>
+                        </p>
+                        <p>
+                            <span style="font-size: 1.2em;">
+                                Sélectionnez <span style="color: #ef0005;"><strong> vos centres d'intérêt </strong></span>pour tenter de gagner à nouveau un Samsung Galaxy S20 au tirage au sort.&nbsp;</span
+                            >
+                        </p>
+                    </div>
+                </div>
+                <div id="widget_543f" class="widget-text margins-none padding-to-bottom offscreen loaded" style="" data-key="543f">
+                    <div style="">
+                        <p><strong style="font-size: 1.3em;">Merci d'avoir joué</strong></p>
+                        <p>Votre participation a bien été prise en compte.</p>
+                        <p>
+                            <strong style="font-size: 1.3em;">
+                                <span style="font-weight: bold; color: #ef0005;">Le tirage au sort aura lieu <br />le 9 juin 2020.</span></strong
+                            >
+                        </p>
+                        <p>Vous recevrez un email si vous êtes l'heureux gagnant, 7 jours ouvrés après le tirage au sort.</p>
+                    </div>
+                </div>
+                <div id="widget_ce9a" class="widget-custom offscreen loaded" data-key="ce9a">
+                    <div class="widget-centre_interet">
+                        <ul class="widget-centre_interet_lists">
+                            <li class="widget-centre_interet_item">
+                                <figure><img src="./sfr_files/9c34c87c-ad50-488b-9ade-29cb9d5511cf.jpg" /></figure>
+                            </li>
+                            <li class="widget-centre_interet_item wactivable" data-value="culture">
+                                <figure>
+                                    <p class="front">DIVERTISSEMENT</p>
+                                    <img src="./sfr_files/f233e6a7-4817-4660-a088-23fa1840641a.jpg" />
+                                    <figcaption>
+                                        <img src="./sfr_files/9bba1e9f-9f82-4c3b-9733-eb159f2fbe1d.png" />
+                                        <p>DIVERTISSEMENT</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="widget-centre_interet_item wactivable" data-value="sport">
+                                <figure>
+                                    <p class="front">SPORT</p>
+                                    <img src="./sfr_files/1e2eb00a-673c-480a-9757-f6869c0134b5.jpg" />
+                                    <figcaption>
+                                        <img src="./sfr_files/9bba1e9f-9f82-4c3b-9733-eb159f2fbe1d.png" />
+                                        <p>SPORT</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="widget-centre_interet_item wactivable" data-value="automobile">
+                                <figure>
+                                    <p class="front">AUTOMOBILE</p>
+                                    <img src="./sfr_files/45b741af-d6b9-441a-b444-38721dd9abf5.jpg" />
+                                    <figcaption>
+                                        <img src="./sfr_files/9bba1e9f-9f82-4c3b-9733-eb159f2fbe1d.png" />
+                                        <p>AUTOMOBILE</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="widget-centre_interet_item wactivable" data-value="voyage">
+                                <figure>
+                                    <p class="front">VOYAGE</p>
+                                    <img src="./sfr_files/a813d33c-ea23-4732-9c3e-ca168012daf6.jpg" />
+                                    <figcaption>
+                                        <img src="./sfr_files/9bba1e9f-9f82-4c3b-9733-eb159f2fbe1d.png" />
+                                        <p>VOYAGE</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="widget-centre_interet_item wactivable" data-value="hightech">
+                                <figure>
+                                    <p class="front">HIGH TECH</p>
+                                    <img src="./sfr_files/71d7a742-fc10-4af2-9a12-91bced604f2d.jpg" />
+                                    <figcaption>
+                                        <img src="./sfr_files/9bba1e9f-9f82-4c3b-9733-eb159f2fbe1d.png" />
+                                        <p>HIGH TECH</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="widget-centre_interet_item wactivable" data-value="mode">
+                                <figure>
+                                    <p class="front">MODE BEAUTE</p>
+                                    <img src="./sfr_files/d8ba67dd-69a9-45eb-95e1-85de65dd5be5.jpg" />
+                                    <figcaption>
+                                        <img src="./sfr_files/9bba1e9f-9f82-4c3b-9733-eb159f2fbe1d.png" />
+                                        <p>MODE BEAUTE</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="widget-centre_interet_item wactivable" data-value="maison">
+                                <figure>
+                                    <p class="front">MAISON</p>
+                                    <img src="./sfr_files/21754c8c-d43d-4985-854b-7d9ff18bdf17.jpg" />
+                                    <figcaption>
+                                        <img src="./sfr_files/9bba1e9f-9f82-4c3b-9733-eb159f2fbe1d.png" />
+                                        <p>MAISON</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="widget-centre_interet_item">
+                                <figure>
+                                    <img src="./sfr_files/9c34c87c-ad50-488b-9ade-29cb9d5511cf.jpg" />
+                                    <figcaption><img src="./sfr_files/9bba1e9f-9f82-4c3b-9733-eb159f2fbe1d.png" /></figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p id="aucun-centre_interet">
+                        Vous devez sélectionner au moins un centre d'intérêt.
+                    </p>
+                    <form class="formulaire_centre">
+                        <input type="hidden" name="campaign_id" value="184534f8-4124-475d-abf1-edbe7e76d206" />
+                        <input type="hidden" name="csv_name" value="centre_interets" />
+                        <input type="hidden" name="fields" value="msisdn,culture,sport,automobile,voyage,hightech,mode,maison" />
+                        <input type="hidden" name="msisdn" value="8f17ee76de441d60f404b9035a2a7071696b4f53dc29c8efeafe77b415609ee0" />
+                        <input type="hidden" id="culture" name="culture" value="0" />
+                        <input type="hidden" id="sport" name="sport" value="0" />
+                        <input type="hidden" id="automobile" name="automobile" value="0" />
+                        <input type="hidden" id="voyage" name="voyage" value="0" />
+                        <input type="hidden" id="hightech" name="hightech" value="0" />
+                        <input type="hidden" id="mode" name="mode" value="0" />
+                        <input type="hidden" id="maison" name="maison" value="0" />
+                        <div class="widget-btn margins-none padding-top-bottom">
+                            <button class="btn-widget btn-widget-medium btn-widget-big-width" style="background-color: #ef0005;"><strong>Validez</strong></button>
+                        </div>
+                    </form>
+                </div>
+                <div id="widget_32e3" class="widget-conditions margins-none padding-bottom loaded" style="" data-key="32e3">
+                    <div class="widget-conditions_text" style="color: rgb(0, 0, 0); text-align: center; font-size: 14px;">En cliquant, j’accepte de recevoir les offres des sociétés du Groupe SFR et de ses partenaires en adhérant au programme SFR Instants Partenaires par email. Je participe au jeu concours dont j’accepte le règlement.</div>
+                </div>
+                <div id="widget_0d60" class="widget-conditions margins-none padding-none loaded" style="" data-key="0d60">
+                    <div class="widget-conditions_text" style="color: rgb(55, 63, 64); font-size: 13px;"><p>Vous pouvez interrompre à tout moment votre adhésion à SFR Instants Partenaires ici :</p></div>
+                </div>
+                <div id="widget_a2d4" class="widget-btn margins-none padding-none loaded" style="" data-key="a2d4">
+                    <a class="btn-widget btn-widget-small btn-widget-medium-width" href="http://mdn.sfr.fr/ucg" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" rel="external" data-track-name="home_button" data-track-value="Se désabonner">Se désabonner</a>
+                </div>
+                <div id="widget_1c69" class="widget-conditions margins-none padding-to-bottom loaded" style="" data-key="1c69">
+                    <a class="btn-widget btn-show-conditions" onclick="track('home_conditions3')" style=""> Règlement du jeu et conditions d'adhésion</a>
+
+                    <div class="widget-conditions_text" style="display: none;">
+                        <p>Article 1 : Organisateur du Jeu</p>
+                        <p>SFR, société anonyme au capital de 10 640 226 396 euros, immatriculée au RCS de Paris, sous le numéro 380 129 866, dont le siège social est situé 78 rue Olivier de Serres – 75505 Paris Cedex 15 (ci-après dénommée la « Société Organisatrice ») organise un jeu gratuit sans obligation d’achat intitulé « instants gagnants actu marques&nbsp; » (ci-après le « Jeu »)</p>
+                        <br /><br />
+                        <p>Article 2 : Durée du Jeu</p>
+                        <br />
+                        <p>Le Jeu débutera le lundi 11 mai&nbsp; 2020 à 8h et prendra fin le vendredi 5 juin&nbsp; 2020&nbsp; inclus à minuit (date et heure de la connexion française faisant foi).</p>
+                        <br />
+                        <p>Article 3 : Conditions de participation</p>
+                        <br />
+                        <p>3.1. La participation au Jeu implique l’acceptation sans réserve du présent règlement dans son intégralité (ci-après le « Règlement »), ainsi que des lois, règlements et autres textes en vigueur&nbsp; en France. Le non-respect des conditions de participation énoncées dans le Règlement entraînera la nullité de la participation en cause.</p>
+                        <br />
+                        <p>3.2. La participation au Jeu est réservée à toute personne physique réunissant à la date de début du Jeu les conditions cumulatives suivantes&nbsp; (ci-après le « Participant ») :</p>
+                        <br />
+                        <p>-&nbsp;&nbsp;&nbsp; être majeur ;</p>
+                        <p>-&nbsp;&nbsp;&nbsp; résider en France métropolitaine (hors DROM-COM) ;</p>
+                        <p>-&nbsp;&nbsp;&nbsp; être client SFR&nbsp; (mobile et/ou internet) et disposer d'un accès Internet</p>
+                        <br /><br />
+                        <p>3.3. Sont exclues de toute participation au Jeu les personnes mineures, les salariés de la Société Organisatrice ainsi que les personnes ayant participé, directement ou indirectement et à quel titre que ce soit,&nbsp; à l’élaboration du Jeu, notamment les personnes travaillant pour la Société Organisatrice, de même que les membres de leur famille (même nom et même adresse postale).</p>
+                        <br />
+                        <p>3.4. Seules seront retenues les participations conformes à l’ensemble des stipulations du Règlement. En conséquence, la Société Organisatrice se réserve le droit de faire toutes les vérifications nécessaires en ce qui concerne l’identité, l’âge et les coordonnées de chaque Participant. Toute indication incomplète, erronée, falsifiée ou ne permettant pas d’identifier le Participant entraînera l’annulation de sa participation.</p>
+                        <br />
+                        <p>Article 4 : Modalités de participation au Jeu</p>
+                        <br />
+                        <p>Le jeu est composé d’un instant gagnant et d’un tirage au sort</p>
+                        <br />
+                        <p>&nbsp;Pour participer à l’instant gagnant du jeu , chaque Participant devra</p>
+                        <br />
+                        <p>&nbsp;1. Être client SFR Mobile et/ou Internet&nbsp; au jour de sa participation et avoir renseigné un email de contact&nbsp; ;</p>
+                        <p>2. Se connecter sur la page internet&nbsp; du jeu depuis son téléphone ou son ordinateur (connexion gratuite depuis un mobile SFR) ;</p>
+                        <br />
+                        <p>3. Cliquez sur le bouton « Tentez votre chance »</p>
+                        <p>En cliquant sur ce bouton,&nbsp; vous acceptez d’adhérer au programme Instants Partenaires; chaque participant est libre d’interrompre à tout moment son adhésion au programme Instants Partenaires&nbsp; depuis le lien de désabonnement&nbsp; présent dans le parcours du jeu&nbsp; ou depuis le lien de désabonnement présent dans chaque email qui lui&nbsp; sera envoyé. Vous pouvez retrouver l’ensemble des conditions du programme Instants Partenaires sur https://instantspartenaires.sfr.fr/</p>
+                        <p>4.&nbsp; Cliquez sur le bouton « Retournez le gobelet»&nbsp;&nbsp; présent sur la page de présentation de l’Instant Gagnant</p>
+                        <p>La participation ne sera prise en compte qu’après avoir cliqué sur le bouton «tentez votre&nbsp; chance»</p>
+                        <p>Pour participer au tirage au sort , chaque Participant devra :</p>
+                        <p>1. Être client SFR Mobile et/ou Internet&nbsp; au jour de sa participation ;</p>
+                        <p>2. . Renseigner les centres d’intérêt qui lui plaisent en sélectionnant ces derniers (au moins un centre d’intérêt et plusieurs choix possibles) ;</p>
+                        <p>3. Cliquer sur le bouton « validez » ;</p>
+                        <p>A noter que la participation au Tirage au sort ne sera considérée comme validée que lorsque l’utilisateur aura sélectionné au moins un centre d’intérêt, puis cliqué sur le bouton « validez » (point 4. ci-dessus).</p>
+                        <p>A l’occasion du renseignement par le Participant des informations demandées, celui-ci se verra proposer un bouton « Tentez votre chance »&nbsp; lui permettant, en le cliquant, de recevoir par email des informations sur les produits et services d’SFR et de ses partenaires. Il est rappelé que chaque participant est libre d’interrompre à tout moment son adhésion au programme Instants Partenaires depuis le lien de désabonnement présent dans le parcours du jeu ou depuis le lien de désabonnement présent dans chaque email qui lui&nbsp; sera envoyé.</p>
+                        <br />
+                        <p>Pour participer au jeu (instant gagnant puis tirage au sort) sans s’inscrire à Instants Partenaires le participant doit adresser à SFR les information suivantes sur papier libre : nom, prénom, adresse postale complète, adresse mail de contact communiqué à SFR accompagnées de la copie d’une pièce d’identité.</p>
+                        <br />
+                        <p>La participation ne pourra être prise en compte que si l’envoi est réalisé avant la date de clôture du Jeu (cachet de la poste faisant foi) à :</p>
+                        <br />
+                        <p>ORANGE</p>
+                        <p>Opération Instants Partenaires</p>
+                        <p>DGP/DSD2C/GDI</p>
+                        <p>1 avenue Nelson Mandela</p>
+                        <p>94 745 Arcueil</p>
+                        <br />
+                        <p>Ci-après “l’Adresse du Jeu”</p>
+                        <br />
+                        <p>Article 5 : Modalités de désignation et d’information de chaque Gagnant</p>
+                        <br />
+                        <p>Tout Participant ayant respecté les modalités de participation décrites à l’article ci-dessus, pourra être désigné gagnant (ci-après le « Gagnant ») s’il clique sur «&nbsp; Tentez votre chance » [à l’instant précis (heure, minute, seconde) correspondant à l’un des 5 moments pendant la durée du Jeu (ci-après l’« Instant Gagnant ») définis préalablement par la Société Organisatrice.</p>
+                        <br />
+                        <p>A toutes fins, il est précisé que le moment des Instants Gagnants ne sera rendu public qu’en cas de litige ou de contestation nécessitant la vérification des Instants Gagnants.</p>
+                        <br />
+                        <p>Il ne sera désigné qu’un Gagnant par Instant Gagnant pendant toute la durée du Jeu.</p>
+                        <br />
+                        <p>Le Gagnant sera directement informé qu’il a gagné par email sur l’adresse utilisée pour la participation du jeu dans un délai maximum de 7 jours ouvrés suivant le jour de l’instant gagnant</p>
+                        <p>Le Gagnant ainsi contacté devra, dans un délai maximum de 7 jours après la réception du message, confirmer qu’il accepte son lot et informer la Société Organisatrice de ses coordonnées postales, courriel, téléphoniques</p>
+                        <br />
+                        <p>Tirage au sort</p>
+                        <br />
+                        <p>Un tirage au sort sera effectué le mardi 9 juin&nbsp; parmi l’ensemble des Participants ayant respecté l’ensemble des modalités de participation et d’inscription du Jeu (ci-après le « Tirage au sort »).</p>
+                        <br />
+                        <p>Le Tirage au Sort désignera un gagnant, parmi les Participants ayant respecté les stipulations de l’article ci-dessus (ci-après désigné le « Gagnant »).</p>
+                        <br />
+                        <p>La Société Organisatrice informera chaque Gagnant de son gain par email sur l’adresse utilisée par ledit gagnant lors de sa participation dans un délai maximum de 7 jours ouvrés suivant le jour du tirage au sort. Le Gagnant ainsi contacté devra, dans un délai maximum de 7 jours après la réception du message privé, confirmer qu’il accepte son lot et informer la Société Organisatrice de ses coordonnées postales, courriel, téléphoniques</p>
+                        <br />
+                        <p>A défaut de réponse reçue par la Société Organisatrice de la part du Gagnant dans les conditions et le délai susvisés ou en cas de renonciation expresse du Gagnant à son lot dans ledit délai, le lot sera considéré comme perdu pour le Gagnant. Il sera réattribué́ à un autre Participant</p>
+                        <br />
+                        <p>A toutes fins, il est précisé́ que les Participants, qui n’auront pas été tirés au sort, n’en seront pas informés.</p>
+                        <br />
+                        <p>Article 6 : Descriptif des lots</p>
+                        <p>6.1. Le Jeu est doté des lots suivants</p>
+                        <br />
+                        <p>Désignation des Lots pour les 5 Instants gagnants&nbsp;</p>
+                        <p>la couleur des lots présentés dans le jeu n’est pas contractuelle</p>
+                        <p>Du 1er au 5ème instant gagnant</p>
+                        <p>10000 Samsung Galaxy S20, 128 Go, couleur gris, 909€ TTC&nbsp; l’unité (valeur indicative)</p>
+                        <br />
+                        <p>Désignation du lot pour le tirage au sort</p>
+                        <p>1 Samsung&nbsp; Galaxy S20, 128 Go: couleur gris, 909€ TTC l’unité (valeur indicative)</p>
+                        <br />
+                        <p>6.2. La valeur de chaque lot visé ci-dessus est uniquement mentionnée à titre indicatif.</p>
+                        <br />
+                        <p>Article 7 : Modalités de remise et d’utilisation de chaque lot</p>
+                        <br />
+                        <p>7.1. Modalité de remise du lot</p>
+                        <p>Chaque lot sera expédié à son Gagnant par Chronopost à l’adresse postale que celui‐ci aura indiqué à la Société Organisatrice, dans un délai approximatif de 6 semaines à compter de la date de réception, par la Société Organisatrice, de la confirmation de l’acceptation de son lot et de la communication de l’adresse postale du Gagnant.</p>
+                        <br />
+                        <p>La Société Organisatrice ne saurait être tenue responsable de toute avarie, vol et perte intervenus lors de la livraison. Par ailleurs, la Société Organisatrice ne pourra en aucun cas être tenue responsable en cas de perte et/ou de détérioration du lot par La Poste et/ou en cas de fonctionnement défectueux des services de La Poste.</p>
+                        <br />
+                        <p>7.2. Précisions concernant les conditions d’utilisation du lot</p>
+                        <br />
+                        <p>7.2.1. La Société Organisatrice ne saurait être tenue responsable d'un quelconque incident et/ou accident qui pourrait intervenir pendant la jouissance de chaque lot attribué et/ou du fait de son utilisation impropre par le Gagnant et qu’elle ne fournira aucune prestation ni garantie liées à l’utilisation dudit lot.</p>
+                        <br />
+                        <p>7.2.2. Chaque lot attribué ne pourra faire l’objet d’une contestation de quelle que sorte que ce soit de la part de chaque Gagnant. Chaque lot attribué est strictement personnel, de telle sorte qu’il ne peut être ni cédé ni vendu à un tiers quel qu’il soit ; il ne pourra faire l’objet, de la part de la Société Organisatrice, d’aucun remboursement en espèces ni d’aucun échange ni d’aucune remise de sa contre-valeur totale ou partielle, en nature ou en numéraire.</p>
+                        <br />
+                        <p>Article 8 : Publicité et promotion des Gagnants</p>
+                        <br />
+                        <p>Du seul fait de l’acceptation de son lot, chaque Gagnant autorise la Société Organisatrice, à compter de l’obtention de son gain, à utiliser en tant que tel son nom, son prénom, sa ville de résidence, dans toutes manifestations promotionnelles liées au présent jeu, en France, et sans que cela ne lui confère une rémunération, un droit ou un avantage quelconque autre que l’attribution de son lot.</p>
+                        <br />
+                        <p>Dans le cas où un Gagnant ne le souhaiterait pas, il devra le stipuler par courrier recommandé à l’adresse du jeu suivante dans un délai de 3 jours à compter de l’annonce de son gain à l’Adresse du Jeu</p>
+                        <br /><br />
+                        <p>Article 9 : Consultation du Règlement</p>
+                        <br />
+                        <p>Le Règlement peut être consulté, téléchargé et imprimé en ligne à partir de <a href="http://mdn.sfr.fr/MFy">http://mdn.sfr.fr/MFy</a> pendant la durée du Jeu.</p>
+                        <br /><br />
+                        <p>Une copie du Règlement sera également adressée par courrier postal à toute personne en faisant la demande écrite sur papier libre comportant, indiquées de manière lisible, ses coordonnées complètes (nom, prénom, adresse postale), avant l’expiration d’un délai de dix (10) jours ouvrés à compter de la date de fin du Jeu (cachet de la Poste faisant foi) à l’Adresse du Jeu.</p>
+                        <br />
+                        <p>Dans tous les cas, toute demande incomplète, illisible, envoyée à une autre adresse que celle visée ci-dessus ou envoyée après l’expiration du délai susvisé (cachet de la Poste faisant foi) sera considérée comme nulle.</p>
+                        <br />
+                        <p>En cas de prolongation ou de report éventuel(le) du Jeu, la date limite d’envoi des demandes d’obtention du Règlement sera reportée d’autant.</p>
+                        <br />
+                        <p>Article 10: Modification du Jeu</p>
+                        <br />
+                        <p>La Société Organisatrice se réserve le droit d’annuler, de reporter, de prolonger, d’écourter ou de modifier partiellement ou en totalité le présent jeu si les circonstances l’y obligent et sans que sa responsabilité ne puisse être engagée en aucune manière de ce fait. Aucun dédommagement ne pourrait être demandé dans ce cadre.</p>
+                        <br />
+                        <p>Dans ces hypothèses, la Société Organisatrice fera ses meilleurs efforts pour en informer les Participants par tout moyen de son choix.</p>
+                        <br />
+                        <p>&nbsp;Article 11 : Données personnelles&nbsp;</p>
+                        <br />
+                        <p>SFR met en œuvre des traitements de données personnelles dans le cadre de votre participation au jeu concours.&nbsp;</p>
+                        <p>L’ensemble des informations collectées dans le cadre de ce formulaire sont nécessaires.&nbsp;</p>
+                        <br />
+                        <p>Les destinataires des données personnelles recueillies sont les équipes d’SFR et de ses partenaires en charge de l’organisation du jeu.</p>
+                        <p>Les données&nbsp; traitées dans le cadre de votre participation seront conservées par SFR 3 (trois) mois après la fin du Jeu.</p>
+                        <p>SFR ne traite une donnée ou une catégorie de données que si elles sont strictement nécessaires à la finalité poursuivie</p>
+                        <br />
+                        <p>SFR traite les catégories de données suivantes :</p>
+                        <p>Données d’identification : Nom, prénom</p>
+                        <p>Données de contact : adresse postale, email, numéro de téléphone</p>
+                        <p>Données de connexion, d’usage des services et d’interaction : Instant de connexion au Jeu</p>
+                        <p>Produits et services détenus ou utilisés : Participation au jeu</p>
+                        <br />
+                        <p>Dans le cas d’une participation sur papier libre SFR traite également la&nbsp; pièce d’identité du participant. &nbsp;&nbsp;&nbsp;</p>
+                        <br />
+                        <p>Les données collectées sont susceptibles d’être traitées hors de l’Union Européenne.&nbsp; Dans ce cas, SFR prend les dispositions nécessaires avec ses sous-traitants et partenaires pour garantir un niveau de protection de vos données adéquat et ce en toute conformité avec la règlementation applicable.</p>
+                        &nbsp;&nbsp;&nbsp; <br />
+                        <p>Si les sous-traitants et partenaires&nbsp; concernés ne sont pas adhérents à l’accord Privacy Shield s’agissant de transferts vers les Etats-Unis d’Amérique, ou ne sont pas situés dans un pays disposant d’une législation considérée comme offrant une protection adéquate, ils auront alors préalablement signé les «clauses contractuelles types» de la Commission européenne ou seront soumis à des Règles internes contraignantes approuvées par les autorités.</p>
+                        &nbsp;&nbsp;&nbsp; <br />
+                        <p>Vous disposez d’un droit d’accès, de rectification et de suppression des données qui vous concernent. Vous pouvez demander la portabilité de ces dernières. Vous avez également le droit de vous opposer aux traitements réalisés ou d’en demander la limitation. Vous pouvez émettre des directives sur la conservation, la suppression ou la communication de vos données personnelles après votre décès.</p>
+                        <br />
+                        <p>Pour exercer vos droits, écrivez à l’Adresse du Jeu (indiquez vos nom, prénom, adresse, numéro de téléphone et joindre un justificatif d'identité). Vous pouvez également contacter le délégué à la protection des données personnelles d’SFR en écrivant à cette même adresse.</p>
+                        <br />
+                        <p>Une réponse vous sera adressée dans un délai d’1 (un) mois à compter de la réception de votre demande.</p>
+                        <br />
+                        <p>Si vos échanges avec SFR n’ont pas été satisfaisants, vous avez la possibilité d’introduire une réclamation auprès de la Commission Nationale de l’Informatique et des Libertés (CNIL), autorité de contrôle en charge du respect des obligations en matière de données à caractère personnel en France.</p>
+                        <br />
+                        <p>Tout consommateur peut s’inscrire gratuitement sur une liste d’opposition dénommée « Bloctel » afin de ne plus être démarché téléphoniquement par un professionnel avec lequel il n’a pas de relation contractuelle en cours. Le consommateur peut s’inscrire sur le site www.bloctel.gouv.fr</p>
+                        <br /><br />
+                        <p>Article 12 : Responsabilité</p>
+                        <br />
+                        <p>12.1. La responsabilité de la Société Organisatrice est strictement limitée à la délivrance des lots effectivement et valablement gagnés.</p>
+                        <br /><br />
+                        <p>12.2. La Société Organisatrice pourra annuler tout ou partie du Jeu s’il apparaît que des fraudes sont intervenues sous quelque forme que ce soit, notamment de manière informatique dans le cadre de la participation au Jeu ou de la détermination du Gagnant. Elle se réserve, dans cette hypothèse, le droit de ne pas attribuer les lots à des fraudeurs et/ou de poursuivre devant les juridictions compétentes les auteurs de ces fraudes.</p>
+                        <br />
+                        <p>12.3. La Société Organisatrice fera ses meilleurs efforts pour permettre à tout moment un accès au Jeu, sans pour autant être tenue à aucune obligation d’y parvenir. La Société Organisatrice pourra, à tout moment, notamment pour des raisons techniques ou des raisons de mise à jour ou de maintenance, interrompre le Jeu. La Société Organisatrice ne sera en aucun cas responsable de ces interruptions et de leurs conséquences.</p>
+                        <br />
+                        <p>Article 13 : Convention de Preuve</p>
+                        <br />
+                        <p>La Société Organisatrice a mis en place les moyens techniques nécessaires pouvant démontrer la participation ou la non-participation d’un Participant. Il est donc convenu que, sauf erreur manifeste, les données contenues dans les systèmes d’information de la Société Organisatrice ont force probante quant aux éléments de connexion et aux informations d’un traitement informatique relatif au Jeu.</p>
+                        <br />
+                        <p>Ainsi, sauf en cas d’erreur manifeste, la Société Organisatrice pourra se prévaloir, notamment aux fins de preuve de tout acte, fait ou omission, des programmes, données, fichiers, enregistrements, opérations et autres éléments (tels que des rapports de suivi ou autres états) de nature ou sous format ou support informatique ou électronique, établis, reçus ou conservés directement ou indirectement par la Société Organisatrice, notamment dans ses systèmes d’information.</p>
+                        <br />
+                        <p>Les Participants s'engagent à ne pas contester la recevabilité, la validité ou la force probante des éléments de nature ou sous format ou support informatique ou électronique précités, sur le fondement de quelque disposition légale que ce soit et qui spécifierait que certains documents doivent être écrits ou signés par les parties pour constituer une preuve. Ainsi les éléments considérés constituent des preuves et, s’ils sont produits comme moyens de preuve par la Société Organisatrice dans toute procédure contentieuse ou autre, ils seront recevables, valables et opposables entre les Parties de la même manière, dans les mêmes conditions et avec la même force probante que tout document qui serait établi, reçu ou conservé par écrit.</p>
+                        <br />
+                        <p>Article 14 : Propriété intellectuelle</p>
+                        <br />
+                        <p>Toutes les créations, dénominations ou marques citées au Règlement de même que sur tout support de communication relatif au Jeu, demeurent la propriété exclusive de leur auteur ou de leur déposant.</p>
+                        <br />
+                        <p>Article 15 :&nbsp; Réclamations</p>
+                        <br />
+                        <p>En cas de contestation ou de réclamation, pour quelque raison que ce soit, les demandes devront être transmises à la Société Organisatrice dans un délai de 2 (deux) mois après la clôture du Jeu (cachet de la poste faisant foi).</p>
+                        <br />
+                        <p>Les demandes devront être formulées par écrit à la Société Organisatrice à l’Adresse du Jeu.</p>
+                        <br />
+                        <p>Il ne sera répondu à aucune demande orale ou téléphonique.</p>
+                        <br />
+                        <p>Article 16 : Loi applicable et juridictions compétentes</p>
+                        <br />
+                        <p>Le présent règlement est soumis à la loi française.</p>
+                        <br />
+                        <p>Tout litige né à l’occasion du présent Jeu et qui ne pourra être réglé à l’amiable sera soumis aux tribunaux compétents.</p>
+                        <br />
+                        <br />
+                        <p>CONDITIONS D’ADHESION PROGRAMME&nbsp; INSTANTS PARTENAIRES</p>
+                        <br />
+                        <p>Les présentes Conditions d'Adhésion au Programme Instants Partenaires&nbsp; ont pour objet de régir les relations entre SFR&nbsp; et les Membres concernant le Programme dénommé «Instants Partenaires». Ce Programme ou Service permet aux Membres de recevoir des Messages Promotionnels, par principe, sur leur terminal mobile et, éventuellement à leur adresse électronique.</p>
+                        <p>Définitions</p>
+                        <p>Objet</p>
+                        <p>Présentation de l'offre de service ou programme Instants Partenaires</p>
+                        <p>Conditions d'inscription à l'offre de service ou programme Instants Partenaires Données personnelles</p>
+                        <p>Actualisation du profil</p>
+                        <p>Modification des Supports du Programme</p>
+                        <p>Déplacements en dehors de la France Métropolitaine&nbsp;</p>
+                        <p>Résiliation</p>
+                        <br />
+                        <p>Définitions</p>
+                        <p>Membre : personne physique majeure domiciliée en France Métropolitaine, client d'une offre de l'opérateur mobile SFR, ayant accepté de recevoir sur son terminal mobile et/ou&nbsp; à son adresse électronique e-mail, des Messages Promotionnels.</p>
+                        <p>Annonceur : toute personne physique ou morale ayant recours au Programme Instants Partenaires pour réaliser des campagnes de diffusion de Messages Promotionnels.</p>
+                        <p>Données à caractère personnel du Membre :</p>
+                        <p>(i)&nbsp;&nbsp;&nbsp; Données communiquées par le Membre via le formulaire d'inscription figurant sur les Sites Internet ou lors des Appels de téléconseillers, ainsi que le cas échéant lors de la modification ou l’actualisation de son Profil,&nbsp;</p>
+                        <p>(ii)&nbsp;&nbsp;&nbsp; les Données de géolocalisation collectées en fonction des endroits où il se déplace.</p>
+                        <br />
+                        <p>L’ensemble de ces Données permettent de constituer le Profil du Membre.</p>
+                        <p>Message Promotionnel :information publicitaire telle que bons plans ou promos prenant par principe la forme d'un SMS, d'un MMS, d'un SMS cliquable , ou d'un courrier électronique , ou tout autre type de Message Promotionnel qui pourrait être défini ultérieurement dans le cadre du Service Actu Marques dont la finalité est de faire la promotion de produits, de services et/ou de l'image générale d'un Annonceur auprès des Membres.</p>
+                        <p>MMS (Multimédia Message Service) : SMS multimédia (Short Message Service) permettant l'échange de données binaires (photos, vidéos, sons) entre téléphones mobiles sur réseaux à haut-débit de type UMTS par exemple.</p>
+                        <p>Profil du Membre : Profil constitué par SFR à partir des Données du Membre qui permettent à SFR de lui adresser des Messages Promotionnels.</p>
+                        <p>SMS (Short Message Service) : service proposé par les opérateurs de téléphonie mobile permettant d'émettre ou de recevoir des messages alphanumériques.</p>
+                        <p>SMS cliquable : SMS permettant grâce à un lien cliquable d'être directement redirigé vers un site internet.</p>
+                        <p>Service/Programme Actu Marques : Service proposé aux Membres leur permettant de recevoir des Messages Promotionnels relatifs à des produits et/ou services d'Annonceurs,&nbsp; en fonction de leur profil&nbsp; et/ou des endroits où ils se déplacent</p>
+                        <p>Sites Internet : sites développés par SFR ou ses Partenaires dont l'objet est de présenter le Service Actu Marques, proposer aux Clients&nbsp; la souscription au dit Service et/ou permettre aux membres de se désinscrire, de gérer leur profil et leurs centres d’intérêt.</p>
+                        <p>Support(s) : Support(s) sur lequel(s) sont reçus les Messages Promotionnels, prenant par principe la forme d'un SMS, d'un MMS, d'un SMS cliquable, ou, éventuellement&nbsp; d'un courrier électronique si le Client a communiqué une adresse électronique à cet effet.</p>
+                        <p>Objet</p>
+                        <p>Les présentes Conditions d'Adhésion au Programme ont pour objet de définir les relations entre SFR SA, Société Anonyme au capital 10 640 226 396 euros, immatriculée au registre du commerce et des sociétés de Paris sous le numéro 380 129 866, ci-après dénommée SFR, et les Membres ayant souscrits au Service Actu Marques.</p>
+                        <p>SFR&nbsp; se réserve le droit de modifier à tout moment les présentes Conditions d'Adhésion au Programme. Dans ce cas, toute modification substantielle fera l'objet d'une mention particulière au sein des Sites Internet, et devra faire l'objet d'une nouvelle acceptation de la part des Membres au Service Actu Marques.</p>
+                        <p>Présentation de l'offre de Service ou Programme Instants Partenaires</p>
+                        <p>Le Service Instants Partenaires&nbsp; permet aux personnes ayant accepté auprès d'SFR, de recevoir des Messages Promotionnels, par principe, sur leur terminal mobile, et/ou sur leur adresse de messagerie électronique. Ces Messages peuvent prendre la forme, par principe, de SMS, MMS, SMS cliquable ou de courrier électronique. Certains Messages Promotionnels tels que le SMS cliquable&nbsp; ou MMS photo et vidéo, ne pourront être acheminés vers les Membres dont le téléphone mobile n'est pas compatible à la réception d'un tel format.</p>
+                        <p>Ces messages invitent les Membres à recevoir des informations sur un des produits et/ou services proposés par l'Annonceur ou à profiter d'une offre promotionnelle proposée par celui-ci, sans que ces énumérations ne soient limitatives.</p>
+                        <br />
+                        <p>Conditions d'inscription à l'offre de Service ou Programme Instants Partenaires</p>
+                        <p>L'Inscription au Service Instants Partenaires&nbsp; est ouverte à tous clients SFR disposant d’une offre mobile ou d’une offre internet en France métropolitaine.</p>
+                        <p>La demande d'inscription au Service Instants Partenaires&nbsp; se réalise via les Sites Internet, ou par les Appels de téléconseillers.</p>
+                        <p>Afin de bénéficier du Service Instants Partenaires , le Membre communique des Données personnelles au moyen d'un formulaire en ligne prévu à cet effet, ou en répondant aux questions posées par l'opérateur du centre d'appels dans le cadre des Appels de téléconseillers.</p>
+                        <p>L'identification du Membre sur les Sites Internet s'effectue par une clé d'identification qui est son numéro de téléphone mobile SFR et son mot de passe.</p>
+                        <p>Ainsi, le Membre déclare accepter recevoir des Messages Promotionnels:</p>
+                        <p>(i) par SMS, MMS, ou SMS cliquable ciblés en fonction de son Profil</p>
+                        <p>(ii) par courrier électronique si le Client a communiqué une adresse électronique requise à cet effet.</p>
+                        <p>Données personnelles&nbsp;&nbsp;</p>
+                        <p>Les Données à caractère personnel du Membre s’étant inscrit au Programme Instants Partenaires , sont collectées et traitées dans le cadre de la fourniture du Service Instants Partenaires&nbsp; qui consiste&nbsp; en l'envoi de Messages Promotionnels en fonction de son Profil, par SMS, MMS ou SMS cliquable et/ou par courrier électronique..</p>
+                        <p>SFR ne traite les données personnelles que pour des finalités déterminées, explicites et légitimes. SFR ne traite pas ces données de manière incompatible avec ces finalités.</p>
+                        <p>Dans le cadre du Service Instants Partenaires, SFR traite vos données dès lors que vous y avez consenti pour les finalités suivantes :</p>
+                        <p>&nbsp;Organiser des opérations de marketing direct</p>
+                        <p>Analyser les usages pour faire des propositions au client (seulement pour les clients SFR mobile ayant accepté de recevoir des SMS, MMS, ou SMS cliquable)</p>
+                        <p>SFR traite également vos données pour d’autres finalités pour lesquelles SFR s’assurer d’avoir un intérêt légitime.</p>
+                        <p>A cet effet, les finalités poursuivies par SFR sont les suivantes :</p>
+                        <p>Améliorer les offres et services</p>
+                        <p>Assurer la sécurité des plateformes et services</p>
+                        <p>Déployer et opérer les offres et services</p>
+                        <p>Les données seront également&nbsp; utilisées par SFR de façon agrégée ne permettant pas l’identification du Membre, à des fins d'études pour fournir aux Annonceurs des rapports anonymes sur les performances des Messages Promotionnels (exemple : savoir le nombre de mobinaute s’étant déplacé vers leur enseigne après une campagne de Messages Promotionnels, le profil des personnes ayant reçu ces messages, l’historique de leurs&nbsp; déplacements).</p>
+                        <p>Vos données sont conservées pour la durée nécessaire à l’accomplissement des finalités mentionnées ci-dessus</p>
+                        <p>Les Données détaillées relatives aux déplacements des Membres sont conservées trois (3) mois à partir de la date de leur collecte. Elles permettent l’actualisation du profil agrégé de déplacement qui est conservé durant la&nbsp; période d’adhésion au Programme Instants Partenaires .</p>
+                        <p>L’ensemble des Données constituant le Profil du Membre est conservé tant que le Membre reste adhérent au Programme&nbsp; Instants Partenaires Les données sont automatiquement effacées lorsque le Membre quitte le Programme Instants Partenaires .</p>
+                        <p>Dans le cadre du service Instants Partenaires , SFR traite les catégories de données suivantes :</p>
+                        <p>Données d’identification : Nom, prénom, identifiant</p>
+                        <p>Caractéristiques personnelles : date de naissance</p>
+                        <p>Données de contact : adresse postale, email, numéro de téléphone…</p>
+                        <p>Vie personnelle : centres d’intérêts</p>
+                        <p>Données de connexion, d’usage des services et d’interaction : Logs de connexion, et d’usage</p>
+                        <p>Profils et scores permettant la segmentation client</p>
+                        <p>Données de localisation</p>
+                        <p>Les données collectées sont destinées aux services internes d’SFR et à ses sous-traitants.</p>
+                        <p>Les données peuvent également être traitées par des partenaires d’SFR. Il s’agit des situations où des partenaires interviennent pour la fourniture de prestations.</p>
+                        <p>Les données collectées sont susceptibles d’être traitées hors de l’Union Européenne. Dans ce cas, SFR prend les dispositions nécessaires avec ses sous-traitants et partenaires pour garantir un niveau de protection de vos données adéquat et ce en toute conformité avec la règlementation applicable.</p>
+                        <p>Vous disposez d’un droit d’accès, de rectification et de suppression des données qui vous concernent. Vous pouvez demander la portabilité de ces dernières. Vous avez également le droit de vous opposer aux traitements réalisés ou d’en demander la limitation.</p>
+                        <p>Vous pouvez émettre des directives sur la conservation, la suppression ou la communication de vos données personnelles après votre décès.</p>
+                        <p>Règles spécifiques au démarchage téléphonique : Tout consommateur peut s’inscrire gratuitement sur une liste d’opposition dénommée « Bloctel » afin de ne plus être démarché téléphoniquement par un professionnel avec lequel il n’a pas de relation contractuelle en cours. Le consommateur peut s’inscrire sur le site www.bloctel.gouv.fr ou par courrier adressé à : Société Opposetel, Service Bloctel, 6, rue Nicolas Siret – 10 000 Troyes</p>
+                        <p>Vous pouvez exercer vos droits à tout moment, ainsi que contacter le Délégué à la Protection des Données personnelles en écrivant à : SFR, Service clientèle Instants Partenaires , 1, Avenue Nelson Mandela, 94745 Arcueil</p>
+                        <p>Toute demande d’exercice de vos droits doit être accompagnée de la photocopie d’un justificatif d’identité (carte nationale d’identité délivrée par l’Etat français ou carte d’identité de l’Union Européenne ou passeport, carte de résident délivrée par l’Etat français, carte de séjour délivrée par l’Etat français ou livret de circulation délivré par l’Etat français). Une réponse vous sera adressée dans un délai d’un mois à compter de la réception de votre demande.</p>
+                        <p>Si vos échanges avec SFR n’ont pas été satisfaisants, vous avez la possibilité d’introduire une réclamation auprès de la Commission Nationale de l’Informatique et des Libertés (CNIL), autorité de contrôle en charge du respect des obligations en matière de données à caractère personnel en France.</p>
+                        <br /><br />
+                        <p>Actualisation du Profil pour les clients SFR mobile ayant accepté de recevoir des SMS, MMS, ou SMS cliquable</p>
+                        <p>Le Membre pourra, à tout moment, modifier son Profil en se connectant sur les Sites Internet, notamment pour changer ses centres d’intérêts.</p>
+                        <p>Par ailleurs, le Profil s’enrichit à tout moment en fonction des endroits où le Membre se déplace.</p>
+                        <p>Modification des Supports du Programme</p>
+                        <p>Le Membre pourra à tout moment arrêter la réception des Messages Promotionnels sur son adresse électronique s’il la communiquée :&nbsp;</p>
+                        <p>(i) soit en se connectant sur les Sites Internet,</p>
+                        <p>(ii) soit en cliquant sur le lien cliquable prévu à cet effet et présent dans le Message Promotionnel.</p>
+                        <p>Dans ce cas, le Membre continuera à recevoir des Messages Promotionnels sur son terminal mobile (SMS, MMS, SMS cliquables).</p>
+                        <p>Déplacements en dehors de la France Métropolitaine</p>
+                        <p>Lors de déplacements du Membre&nbsp; en dehors de la France métropolitaine, les MMS reçus sur le terminal (MMS terminated) du Membre sont soumis aux tarifs d’itinérance de détail pratiqués par l’opérateur mobile.&nbsp;</p>
+                        <p>Résiliation</p>
+                        <p>Le Membre qui ne souhaite plus recevoir de Messages Promotionnels peut, à tout moment, se désinscrire intégralement du Service en se connectant directement sur les Sites Internet ou, pour les clients SFR mobile ayant accepté de recevoir des SMS, MMS, ou SMS cliquable en envoyant STOP par SMS au 21600 ou 21610 (envoi SMS gratuit).</p>
+                        <p>Cette désinscription au Service n'aura aucun effet sur son contrat principal avec l'opérateur SFR&nbsp; qui demeurera intégralement en vigueur.</p>
+                        <p>En revanche, pour les clients SFR mobile ayant accepté de recevoir des SMS, MMS, ou SMS cliquable la résiliation de son contrat principal avec l'opérateur mobile SFR, entraînera la résiliation automatique au Service Instants Partenaires&nbsp; qui constitue une option du contrat principal.</p>
+                    </div>
+                </div>
+                <div id="widget_7e22" class="widget-custom offscreen loaded" data-key="7e22">
+                    <!-- Insert your HTML there -->
+                </div>
+            </div>
+        </div>
+        <script>
+            ;(function () {
+                var cb = function (href) {
+                    var l = document.createElement('link')
+                    l.rel = 'stylesheet'
+                    l.href = href
+                    var h = document.getElementsByTagName('head')[0]
+                    h.parentNode.insertBefore(l, h)
+                }
+                try {
+                    var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame
+                } catch (e) {
+                    var raf = null
+                    console.error(e)
+                }
+                var cbs = [cb.bind(undefined, './sfr_files/1622f6f9-2557-4c77-ae31-88e752ce2f42.css')]
+                for (var i in cbs) {
+                    if (raf) raf(cbs[i])
+                    else window.addEventListener('load', cbs[i])
+                }
+            })()
+        </script>
+        <script>
+            ;(function () {
+                function visit() {
+                    var code = window.location.pathname.split('/').pop()
+                    if (!/^[a-z0-9]{4,}$/i.test(code)) {
+                        console.info('Visit tracking disabled on this URL.')
+                    } else {
+                        return post('logics/commons/visit/' + code)
+                    }
+                }
+                function post(url) {
+                    var xhr = new XMLHttpRequest()
+                    xhr.open('POST', url, true)
+                    xhr.send()
+                    return xhr
+                }
+                visit()
+            })()
+        </script>
+        <script src="./sfr_files/jquery-2.1.4.min.js"></script>
+        <script src="./sfr_files/f2270219-8768-42c6-b189-626500c5e30a.js"></script>
+        <script src="./sfr_files/tracker.js"></script>
+        <script src="./sfr_files/form.js"></script>
+        <script src="./sfr_files/5685ad05-59c3-4a15-b0a9-3894f30272ba.js"></script>
+        <script src="./sfr_files/1034793e-4244-476d-aa1e-690a65897a14.js"></script>
+        <script src="./sfr_files/fde16d73-b324-479e-a9d8-2c7dcdf48062.js"></script>
+
+        <script src="./sfr_files/fastclick.min.js"></script>
+        <script type="text/javascript">
+            if ('addEventListener' in document) {
+                document.addEventListener(
+                    'DOMContentLoaded',
+                    function () {
+                        FastClick.attach(document.body)
+                    },
+                    false
+                )
+            }
+        </script>
+
+        <script>
+            $(function () {
+                var a = $('.widget-conditions')
+                a.each(function () {
+                    var a = $(this)
+                    a.find('.btn-show-conditions').click(function (c) {
+                        c.preventDefault(), b(), $(this).hide()
+                        var d = a.find('.widget-conditions_text').show().offset().top
+                        $('html, body').animate({ scrollTop: d })
+                    })
+                })
+                var b = function () {
+                    a.each(function () {
+                        var a = $(this).find('.btn-show-conditions')
+                        a.length && (a.show(), $(this).find('.widget-conditions_text').hide())
+                    })
+                }
+            })
+        </script>
+        <script>
+            ;(function () {
+                /*******************************
+  WIDGET CUSTOM ou lib
+*******************************/
+
+                var pages_organizer = {}
+                //var current_page="start_page";
+
+                function change_page(pagename) {
+                    console.log(pagename)
+
+                    $('#home>div').addClass('offscreen')
+                    $.each(pages_organizer[pagename], function (index, elem) {
+                        $(elem).removeClass('offscreen')
+                    })
+                }
+
+                $(document).on('configure_pages', function (event, configuration) {
+                    pages_organizer = $.extendext(true, 'extend', {}, pages_organizer, configuration)
+                    // Le dernier widget expert gère l'affichage au chargement avec la classe loaded
+                    //$("#home>div").addClass("offscreen");
+                })
+
+                $(document).on('change_page', function (event, page) {
+                    change_page(page)
+                })
+            })()
+        </script>
+        <script>
+            ;(function () {
+                // Instantiate new modal
+
+                var keydownHelper = function (e) {
+                    e.target.removeEventListener('input', inputHelper)
+                    var val = e.target.value
+                    if (e.keyCode === 8 && val.length) {
+                        e.target.value = val.slice(0, val.length - 1)
+                        e.preventDefault()
+                        return
+                    }
+                    if (e.key.length == 1) {
+                        val += e.key
+                        e.target.value = val
+                        e.preventDefault()
+                    }
+                }
+                var email_regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+
+                var inputHelper = function (e) {
+                    e.preventDefault()
+                    window.removeEventListener('keydown', keydownHelper)
+                }
+
+                window.addEventListener('input', inputHelper)
+                window.addEventListener('keydown', keydownHelper)
+
+                var keep_request = false
+                var timing_interval = 400
+
+                function load_winning(response) {
+                    var path = window.location.pathname.split('/')
+                    var short_code = path[path.length - 1]
+                    request_callback(true)
+                }
+
+                function request_callback(response_data) {
+                    var evt = document.createEvent('Event')
+                    evt.initEvent('participationresultevent', true, true)
+                    evt.response_data = response_data
+                    document.dispatchEvent(evt)
+                }
+
+                function formatDateElement(integer) {
+                    return integer < 10 ? '0' + integer : integer
+                }
+
+                function getFormattedNow() {
+                    var now = new Date()
+                    var day = formatDateElement(now.getDate())
+                    var month = formatDateElement(now.getMonth() + 1) // January is 0!
+                    var year = now.getFullYear()
+                    var hour = formatDateElement(now.getHours())
+                    var minute = formatDateElement(now.getMinutes())
+                    var second = formatDateElement(now.getSeconds())
+                    return year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second
+                }
+
+                function submit_form_callback(event) {
+                    event.preventDefault()
+                    localStorage.setItem('key', 'keytestSFRClassiqueMail5')
+                    var $form = $('form.monformulaire')
+                    $form.find('input[name=date]').val(getFormattedNow())
+                    $(document).trigger('change_page', 'loading_page')
+                    keep_request = true
+                    $.postOnCsv($form.serialize(), {
+                        always: load_winning,
+                    })
+                }
+
+                $('form.monformulaire button').click(submit_form_callback)
+
+                document.addEventListener('DOMContentLoaded', load_winning)
+            })()
+        </script>
+        <script>
+            ;(function () {
+                window.is_winner = false
+
+                function result_handler(evt) {
+                    window.is_winner = evt.response_data.winner
+                    //$(document).trigger("change_page", "play_page");
+                    if (evt.response_data.shaked) {
+                        if (window.is_winner) {
+                            $(document).trigger('change_page', 'win_page')
+                        } else {
+                            $(document).trigger('change_page', 'finished')
+                            console.log('refresh')
+                        }
+                    } else {
+                        $(document).trigger('change_page', 'play_page')
+                    }
+                }
+
+                document.addEventListener('participationresultevent', result_handler, false)
+            })()
+        </script>
+        <script>
+            ;(function () {
+                window.onload = function () {
+                    $(function () {
+                        var intMoves = 10 // number of moves
+                        var speed = 0.4 // initial speed of moves - increase each moves
+                        var maxSpeed = 0.4 // maximum speed of moves
+
+                        var objMovePattern = [] // object contain a pattern for the cup shifting
+                        var ball = $('#ball')
+                        var widthBall = ball.width() / 2 - 28
+                        var firstCup
+                        ;(function init() {
+                            objMovePattern = generateMovePatterns()
+                            //$('#btnStart').on('click', startGame);
+
+                            if (localStorage.getItem('key') == 'keytestSFRClassiqueMail5') {
+                                startGame(event)
+                                console.log('reload')
+                            } else {
+                            }
+
+                            $('#btnParticiper').on('click', startGame)
+
+                            /*if($('#widget_1cc9').is(':hidden')){
+        console.log('start game');
+        startGame(event);
+    };*/
+
+                            /*if (current_page === "play_page") {
+        startGame(event);
+    }*/
+                        })()
+
+                        function startGame(event) {
+                            $(event.currentTarget).remove()
+                            firstCup = 1
+                            var cup = $('.cup-' + firstCup)
+                            TweenMax.to(cup, 0.5, { y: -130 })
+                            TweenMax.to(ball, 0.5, {
+                                left: cup.position().left + widthBall,
+                                y: 0,
+                                onComplete: function () {
+                                    ball.css('z-index', '1')
+                                    $('.cup').css('z-index', '10')
+                                    TweenMax.to(cup, 0.5, { y: 0, onComplete: shakeCups })
+                                },
+                            })
+                        }
+
+                        function shakeCups() {
+                            ball.css('display', 'none')
+                            var aPos = [$('.cup-' + objMovePattern[0][0]).position().left, $('.cup-' + objMovePattern[0][1]).position().left, $('.cup-' + objMovePattern[0][2]).position().left]
+                            for (var i = 0; i < objMovePattern.length; i++) {
+                                speed = speed > maxSpeed ? speed / 1.1 : maxSpeed
+                                TweenMax.to($('.cup-' + objMovePattern[i][0]), speed, { left: aPos[0], delay: speed * i, ease: Sine.easeOut })
+                                TweenMax.to($('.cup-' + objMovePattern[i][1]), speed, { left: aPos[1], delay: speed * i, ease: Sine.easeOut })
+                                if (i == objMovePattern.length - 1) TweenMax.to($('.cup-' + objMovePattern[i][2]), speed, { left: aPos[2], delay: speed * i, ease: Sine.easeOut, onComplete: unableCupClick })
+                                else TweenMax.to($('.cup-' + objMovePattern[i][2]), speed, { left: aPos[2], delay: speed * i, ease: Sine.easeOut })
+                            }
+                        }
+
+                        function unableCupClick() {
+                            $('.cup').css('cursor', 'pointer')
+                            $('.cup').on('click', clickCup)
+                            $('#btnStart').on('click', clickCupButton)
+                        }
+
+                        function clickCup(event) {
+                            var currentCup = $(event.currentTarget)
+                            currentCup.off('click')
+                            currentCup.css('cursor', 'default')
+                            var iCup = currentCup.attr('id').split('cup')[1]
+                            ball.css({ left: $('.cup-' + firstCup).position().left + widthBall, display: 'block' })
+                            TweenMax.to($('.cup-' + iCup), 0.5, { y: -80, ease: Sine.easeIn, delay: 0.1 })
+                            //console.log("youwin");
+                            /*$('.cup').css('pointer-events', 'none');
+    $('#ball').css('display', 'block');
+    $('#ball2').css('display', 'block');
+    $('#ball3').css('display', 'block');*/
+                            reveal()
+                            return
+                        }
+
+                        function clickCupButton(event) {
+                            TweenMax.to($('.cup-2'), 0.5, { y: -80, ease: Sine.easeIn, delay: 0.1 })
+                            reveal()
+                            return
+                        }
+
+                        // Tool functions
+
+                        function generateMovePatterns() {
+                            var objMoves = [[1, 2, 3]] // initial state, cups order
+                            var aMoves = [1, 2, 3]
+
+                            for (var i = 0; i < intMoves; i++) {
+                                var initialPattern = [1, 2, 3]
+                                var objShuffledPattern = shuffle(initialPattern)
+                                while (objShuffledPattern[0] == objMoves[i][0]) {
+                                    objShuffledPattern = shuffle(initialPattern)
+                                }
+                                objMoves.push(objShuffledPattern)
+                            }
+
+                            return objMoves
+                        }
+
+                        function shuffle(array) {
+                            var currentIndex = array.length,
+                                temporaryValue,
+                                randomIndex
+
+                            // While there remain elements to shuffle...
+                            while (0 !== currentIndex) {
+                                // Pick a remaining element...
+                                randomIndex = Math.floor(Math.random() * currentIndex)
+                                currentIndex -= 1
+
+                                // And swap it with the current element.
+                                temporaryValue = array[currentIndex]
+                                array[currentIndex] = array[randomIndex]
+                                array[randomIndex] = temporaryValue
+                            }
+
+                            return array
+                        }
+                    })
+                }
+
+                function reveal() {
+                    //ballons.classList.add('open-gift-win')
+                    $('.cup').css('pointer-events', 'none')
+                    $('#ballWin1').css('display', 'block')
+                    $('#ballWin2').css('display', 'block')
+                    $('#ballWin3').css('display', 'block')
+                    track('trigger_win')
+                    function delai() {
+                        $(document).trigger('change_page', 'win_page')
+                    }
+                    setTimeout(delai, 2500)
+                    track('open')
+                }
+            })()
+        </script>
+        <script>
+            ;(function () {
+                function submit_form_interet(event) {
+                    event.preventDefault()
+
+                    var $form = $('form.formulaire_centre')
+                    var atLeastOneItemSelected = Object.values($form.find(':input'))
+                        .filter(function (e) {
+                            return e.id
+                        })
+                        .some(function (e) {
+                            return Boolean(Number(e.value))
+                        })
+                    if (atLeastOneItemSelected) {
+                        $.postOnCsv($form.serialize(), {
+                            always: function () {
+                                $(document).trigger('change_page', 'finished')
+                            },
+                        })
+                    } else {
+                        document.getElementById('aucun-centre_interet').style.display = 'block'
+                    }
+                }
+
+                $('form.formulaire_centre button').click(submit_form_interet)
+
+                $('.wactivable').on('click', function (event) {
+                    $(event.currentTarget).toggleClass('wchecked')
+                    var formtarget = $(event.currentTarget).data('value')
+                    var input_target = $('form.formulaire_centre input[name="' + formtarget + '"]')
+                    var current_val = input_target.val()
+                    var next_val = '0'
+
+                    if (current_val === '0') {
+                        next_val = '1'
+                    }
+                    input_target.val(next_val)
+                })
+            })()
+        </script>
+        <script>
+            ;(function () {
+                // Instantiate new modal
+                var modale = new Custombox.modal({
+                    content: {
+                        effect: 'fadein',
+                        target: '#modale',
+                    },
+                })
+
+                function open_pop(event) {
+                    event.preventDefault()
+                    /*var $form = $('form.monformulaire');*/
+                    modale.open()
+                    return
+                }
+
+                $('#widget_a2d4').click(open_pop)
+            })()
+        </script>
+        <script>
+            ;(function () {
+                var logo = '#widget_dc0d'
+                var titre = '#widget_944d'
+                var titre2 = '#widget_ad60'
+                var visuel_s20 = '#widget_b65c'
+                var spacer = '#widget_1862'
+                var formulaire_acceptation = '#widget_sfr_form'
+                var texte_lots = '#widget_c29a'
+                var spin = '#widget_cd7c'
+                var box = '#widget_1cc9'
+                var bravo = '#widget_0431'
+                var win_picture = '#widget_69c3'
+                var win_text = '#widget_bb84'
+                var formulaire_wall = '#widget_ce9a'
+                var loose_text = '#widget_95f0'
+                var fin_text = '#widget_543f'
+                var cgu_acceptation = '#widget_32e3'
+                var cgu_stop = '#widget_0d60'
+                var cgu = '#widget_1c69'
+                var desabo = '#widget_a2d4'
+
+                $(document).trigger('configure_pages', {
+                    start_page: [logo, titre, titre2, visuel_s20, formulaire_acceptation, cgu_acceptation, cgu_stop, desabo, cgu],
+                    loading_page: [logo, spacer, spin, cgu_stop, desabo, cgu],
+                    play_page: [logo, spacer, texte_lots, box, cgu_stop, desabo, cgu],
+                    win_page: [logo, spacer, bravo, win_picture, win_text, cgu_stop, desabo, cgu],
+                    loose_page: [logo, spacer, loose_text, formulaire_wall, cgu_stop, desabo, cgu],
+                    finished: [logo, spacer, fin_text, cgu_stop, desabo, cgu],
+                })
+                window.addEventListener('load', function () {
+                    $(document).trigger('change_page', 'start_page')
+                    var widgets = document.querySelectorAll('#home > div')
+                    widgets.forEach(function (widget) {
+                        widget.classList.add('loaded')
+                    })
+                })
+            })()
+        </script>
+    </body>
+</html>
